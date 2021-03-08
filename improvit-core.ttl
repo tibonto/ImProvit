@@ -1,0 +1,375 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix improvit: <http://w3id.org/improvit/> .
+
+# Annotations
+
+<http://w3id.org/improvit/> 
+    a owl:Ontology;
+    rdfs:label "ImProVIT Ontology" 
+    .
+    
+
+# Classes
+improvit:Donor   a   rdfs:Class.
+improvit:Biosample   a   rdfs:Class.
+improvit:Experimental_sample  a   rdfs:Class.
+improvit:Experimental_Protocol  a   rdfs:Class.
+improvit:Biosample   a   rdfs:Class.
+improvit:Assay_Analysis   a   rdfs:Class.
+improvit:Assay_Protocol   a   rdfs:Class.
+improvit:Study   a   rdfs:Class.
+improvit:HBV_Diagnosis_Measurements  a   rdfs:Class.
+improvit:Study_Infection   a   rdfs:Class.
+improvit:Co_infection_Measurements   a   rdfs:Class.
+improvit:Anti_HBc_Measurement  a   rdfs:Class.
+improvit:HBV_Genotype_Measurement   a   rdfs:Class.
+improvit:HBeAg_Measurement   a   rdfs:Class.
+improvit:Liver_function_Measurements  a   rdfs:Class.
+improvit_Heamatology_Measurements   a rdfs:class.
+improvit:HBsAg_Measurement  a   rdfs:Class.
+improvit:HBV_DNA_Measurement   a   rdfs:Class.
+improvit:Anti_HIV_Measurement   a   rdfs:Class.
+improvit:Anti_HCV_Measurement   a   rdfs:Class.
+improvit:Anti_HDV_Measurement   a   rdfs:Class.
+improvit:Conductor_Person   a   rdfs:Class.
+improvit: Conductor_Study  a   rdfs:Class.
+improvit:Infectious_agent  a   rdfs:Class.
+improvit:Taxonomy  a   rdfs:Class.
+improvit:Disease  a   rdfs:Class.
+improvit:Infection_phase_record  a   rdfs:Class.
+improvit:symptom  a   rdfs:Class.
+improvit:Liver_Faliur_stage   a   rdfs:Class.
+improvit:Short_term_Symptom   a   rdfs:Class.
+improvit:Long_term_Symptom  a   rdfs:Class.
+improvit:Cirrhosis_status   a   rdfs:Class.
+improvit:Ultrasound_machine_record  a   rdfs:Class.
+improvit:medication_treatment  a   rdfs:Class.
+improvit:Disease_History   a   rdfs:Class.
+improvit:Intervention  a   rdfs:Class.
+improvit:Disease_Intervention  a   rdfs:Class.
+improvit:Drug_Intervention   a   rdfs:Class.
+
+
+
+# Object Properties
+improvit:donor_id  a  rdf:Property.
+improvit:gender  a  rdf:Property.
+improvit:age    a   rdf:Property.
+improvit:biosample_id   a rdf:Property.
+improvit:biosample_type   a rdf:Property.
+improvit:biosample_amount  a rdf:Property.
+improvit:biosample_unit   a rdf:Property.
+improvit:experimental_sample_id  a  rdf:Property.
+improvit:experimental_protocol_id a  rdf:Property.
+improvit:study_id  a  rdf:Property.
+improvit:study_name  a  rdf:Property.
+improvit:full_study_name a  rdf:Property.
+improvit:study_period_start  a  rdf:Property.
+improvit:study_period_end  a  rdf:Property.
+improvit:study_objective  a  rdf:Property.
+improvit:study_hypothesis  a  rdf:Property.
+improvit:protocol_name a rdf:Property.
+improvit:source  a rdf:Property.      # need to check with kemele in Experimental_Protocol
+improvit:assay_name  a rdf:Property. # also this
+improvit:measurement_name   a rdf:Property. #check with kemele as the same indicated as PK in HBV_Diagnosis_measurements
+improvit:contact_name   a rdf:Property.
+improvit:contact_email   a rdf:Property.
+improvit:contact_phone   a rdf:Property.
+improvit:qualification   a rdf:Property.
+improvit:position  a rdf:Property.
+improvit:institue_name  a rdf:Property.
+improvit:full_institue_name  a rdf:Property.
+improvit:research_group    a rfd:Property.
+improvit:contact_email   a rdf:Property.
+improvit:antigen_name a rdf:Property.
+improvit:nCBTaxon   a rdf:Property.
+improvit:pathological_hepatobiliary_system  a rdf:Property.
+improvit:infectivity       a rdf:Property.
+improvit:pathogencity      a rdf:Property.
+improvit:virulence   a rdf:Property.
+improvit:toxicity    a rdf:Property.
+improvit:invasiveness a rdf:Property.
+improvit:antigencity  a rdf:Property.
+improvit:infection_name a rdf:Property.
+improvit:infection_type a rdf:Property.
+improvit:measurement_name  a rdf:Property.
+improvit:source    a rdf:Property.   #need to check with Kemele in Assay_Protocol class
+improvit:machine_name a rdf:Property.
+improvit:company_name  a rdf:Property.
+improvit:detection_limit  a rdf:Property.
+improvit:date   a rdf:Property.
+improvit:intended  a rdf:Property.
+improvit:normalized_signal_To_cuttoff  a rdf:Property.
+improvit:date  a rdf:Property.        # how to distingush between the same attributes in different class such as date
+improvit:hbv_genotype a rdf:Property.
+improvit:alt_amount  a rdf:Property.
+improvit:alt_unit   a rdf:Property.
+improvit:alt_min_range   a  rdf:Property.
+improvit:alt_max_range   a  rdf:Property.
+improvit:ast_amount  a rdf:Property.
+improvit:ast_unit   a rdf:Property.
+improvit:ast_min_range   a  rdf:Property.
+improvit:ast_max_range   a  rdf:Property.
+improvit:bilirubin_amount  a rdf:Property.
+improvit:bilirubin_unit   a rdf:Property.
+improvit:bilirubin_min_range   a  rdf:Property.
+improvit:bilirubin_max_range   a  rdf:Property.
+improvit:albumin_amount  a rdf:Property.
+improvit:albumin_unit   a rdf:Property.
+improvit:albumin_min_range   a  rdf:Property.
+improvit:albumin_max_range   a  rdf:Property.
+improvit:quick_value a rdf:Property.
+improvit:iNR_value  a rdf:Property.
+improvit:cRP_value a rdf:Property.
+improvit:gGT_value  a rdf:Property.
+improvit:leukocytes_in_Tsd  a rdf:Property.
+improvit:platelets   a rdf:Property.
+improvit:quick_value_min_range a rdf:Property.
+improvit:iNR_value_min_range  a rdf:Property.
+improvit:cRP_value_min_range a rdf:Property.
+improvit:gGT_value_min_range  a rdf:Property.
+improvit:leukocytes_in_Tsd_min_range  a rdf:Property.
+improvit:platelets_min_range   a rdf:Property.
+improvit:quick_value_max_range a rdf:Property.
+improvit:iNR_value_max_range  a rdf:Property.
+improvit:cRP_value_max_range a rdf:Property.
+improvit:gGT_value_max_range  a rdf:Property.
+improvit:leukocytes_in_Tsd_max_range  a rdf:Property.
+improvit:platelets_max_range   a rdf:Property.
+improvit:amount    a rdf:Property.             ##need to check how about amount for another class
+improvit:unit  a rdf:Property.  # repeated also in Ultrasound_class
+improvit:mnemonic   a rdf:Property.
+improvit:common_name   a rdf:Property.
+improvit:taxon_identifier  a rdf:Property.
+improvit:scientific_name  a rdf:Property.
+improvit:other_names  a rdf:Property.
+improvit:superkingdom   a rdf:Proerty.
+improvit:kingdom  a rdf:Property.
+improvit:phylum  a rdf:Property.
+improvit:class a rdf:Property.
+improvit:order  a rdf:Property.
+improvit:family   a rdf:Property.
+improvit:genus   a rdf:Property.
+improvit:species  a rdf:Property.
+improvit:disease_name  a rdf:Property.
+improvit:synonyms  a rdf:Property.
+improvit:disease_type a rdf:Property.
+improvit:disease_classification  a  rdf:Property.
+improvit:disease_entity  a  rdf:Property.
+improvit:disease_entity_system  a rdf:Property.
+improvit:dOID  a rdf:Property.
+improvit:uMLS_CUI  a rdf:Property.
+improvit:nCI  a rdf:Property.
+improvit:mESH a rdf:Property.
+improvit:sNOMEDCT_US_2020_03_01  a rdf:Property.
+improvit:eFO  a rdf:Property.
+improvit:symptom_name a rdf:Property.
+improvit:short_term_symptom_name  a rdf:Property.
+improvit:long_term_symptom_name  a rdf:Property.
+improvit:cirrhosis_record  a rdf:Property.
+improvit:fibro_scan_value  a rdf:Property.
+improvit:stage_name   a rdf:Property.
+improvit:diagnosis    a  rdf:Property.
+improvit:hBV_medication  a rdf:Property.
+improvit:s_therapy  a  rdf:Property.
+improvit:IFN_mediaction  a rdf:Property.
+improvit:NUC_medication a rdf:Property.
+improvit:start_date  a  rdf:Property.
+improvit:end_date   a   rdf:Property.
+improvit:other_disease_name a rdf:Property.
+improvit:current_status  a rdf:Property.
+improvit:disease_year   a rdf:Property.
+improvit:intervention_name   a rdf:Property.
+improvit:drug_intervention_date   a rdf:Property.
+improvit:other_drug_name  a rdf:Property.
+
+
+# Datatype Properties
+improvit:donor_id  rdfs:domain   improvit:Donor;
+rdfs:range    xsd:string.
+improvit:age rdfs:domain   improvit:Donor;
+rdfs:range    xsd:positiveInteger.
+improvit:gender rdfs:domain   improvit:Donor;
+rdfs:range    xsd:string.
+improvit:experimental_sample_id rdfs:domain   improvit:Experimental_sample;
+rdfs:range    xsd:string.
+improvit:experimental_protocol_id rdfs:domain   improvit:Experimental_sample;
+rdfs:range    xsd:string.
+improvit:study_id rdfs:domain   improvit:Study;
+rdfs:range    xsd:string.
+improvit:study_name rdfs:domain   improvit:Study;
+rdfs:range    xsd:string.
+improvit:full_study_name rdfs:domain   improvit:Study;
+rdfs:range    xsd:string.
+improvit:study_period_start rdfs:domain   improvit:Study;
+rdfs:range    xsd:date.
+improvit:study_period_end rdfs:domain   improvit:Study;
+rdfs:range    xsd:date.
+improvit:study_objective rdfs:domain   improvit:Study;
+rdfs:range    xsd:string.
+improvit:study_hypothesis rdfs:domain   improvit:Study;
+rdfs:range    xsd:string.
+improvit:experimental_protocol_id rdfs:domain   improvit:Experimental_Protocol;
+rdfs:range    xsd:string.
+improvit:protocol_name rdfs:domain   improvit:Experimental_Protocol;
+rdfs:range    xsd:string.
+improvit:source rdfs:domain   improvit:Experimental_Protocol;  #
+rdfs:range    xsd:string.
+improvit:assay_name rdfs:domain   improvit:Experimental_Protocol;# FK
+rdfs:range    xsd:string.
+improvit:source rdfs:domain   improvit:Experimental_Protocol;   #Q how if attr repeated in different_classes such as here assay_name
+rdfs:range    xsd:string.
+improvit:assay_name    rdfs:domain improvit:Assay_Analysis; #
+rdfs:range   xsd:srting.
+improvit:measurement_name    rdfs:domain improvit:Assay_Analysis; # here as FK should I indicated in this class also
+rdfs:range   xsd:srting.
+improvit:source    rdfs:domain improvit:Assay_Protocol; #
+rdfs:range   xsd:srting.
+improvit:method    rdfs:domain improvit:Assay_Protocol; 
+rdfs:range   xsd:srting.
+improvit:assay_name    rdfs:domain improvit:Assay_Protocol; # here as FK should I indicated in this class also
+rdfs:range   xsd:srting.
+improvit:machine_name    rdfs:domain improvit:Assay_Protocol; 
+rdfs:range   xsd:srting.
+improvit:company_name    rdfs:domain improvit:Assay_Protocol; 
+rdfs:range   xsd:srting.
+improvit:detection_limit    rdfs:domain improvit:Assay_Protocol; 
+rdfs:range   xsd:srting.
+improvit:biosample_id    rdfs:domain improvit:Assay_Protocol; # here as FK should I indicated in this class also
+rdfs:range   xsd:srting.
+improvit:biosample_type    rdfs:domain improvit:Assay_Protocol; # here as FK should I indicated in this class also
+rdfs:range   xsd:srting.
+improvit:date    rdfs:domain improvit:Assay_Protocol; 
+rdfs:range   xsd:srting.
+improvit:intended_use    rdfs:domain improvit:Assay_Protocol;  
+rdfs:range   xsd:srting.
+improvit:measurement_name    rdfs:domain improvit:Assay_Protocol; # here as FK should I indicated in this class also
+rdfs:range   xsd:srting.
+improvit:measurement_name   rdfs:domain improvit:HBV_Diagnosis_measurements;
+rdfs:range   xsd:srting.
+improvit:donor_id   rdfs:domain improvit:Anti_HBc_Measurement; # as FK
+rdfs:range   xsd:srting.
+improvit:measurement_name   rdfs:domain improvit:Anti_HBc_Measurement; #as FK
+rdfs:range   xsd:srting.
+improvit:normalized_signal_To_cuttoff   rdfs:domain improvit:Anti_HBc_Measurement;
+rdfs:range   xsd:boolean.
+improvit:date   rdfs:domain improvit:Anti_HBc_Measurement;
+rdfs:range   xsd:date.
+improvit:donor_id   rdfs:domain improvit:HBV_Genotype_Measurement; # as FK
+rdfs:range   xsd:string.
+improvit:measurement_name  rdfs:domain improvit:HBV_Genotype_Measurement; # as FK
+rdfs:range   xsd:string.
+improvit:hbv_genotype   rdfs:domain improvit:HBV_Genotype_Measurement;
+rdfs:range   xsd:string.
+improvit:date   rdfs:domain improvit:HBV_Genotype_Measurement;
+rdfs:range   xsd:date.
+improvit:donor_id   rdfs:domain improvit:HBeAg_Measurement; # as FK
+rdfs:range   xsd:string.
+improvit:measurement_name  rdfs:domain improvit:HBeAg_Measurement; # as FK
+rdfs:range   xsd:string.
+improvit:normalized_signal_To_cuttoff  rdfs:domain improvit:HBeAg_Measurement;
+rdfs:range   xsd:boolean.
+improvit:date   rdfs:domain improvit:HBeAg_Measurement;
+rdfs:range   xsd:date.
+improvit:donor_id   rdfs:domain improvit:Liver_function_Measurements; # as FK
+rdfs:range   xsd:string.
+improvit:alt_amount rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:alt_min_range  rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:alt_max_range   rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:alt_unit  rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:string.
+improvit:ast_amount rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:ast_min_range  rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:ast_max_range   rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:ast_unit  rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:string.
+improvit:bilirubin_amount rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:bilirubin_min_range  rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:bilirubin_max_range   rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:bilirubin_unit  rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:string.
+improvit:albumin_amount rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:albumin_min_range  rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:albumin_max_range   rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:albumin_unit  rdfs:domain improvit:Liver_function_Measurements;
+rdfs:range   xsd:string.
+improvit:quick_value rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:quick_value_min_range  rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:quick_value_max_range   rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:quick_value_unit  rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:string.
+improvit:iNR_value rdfs:domain improvit:Heamatology_measurements;
+rdfs:range   xsd:double.
+improvit:iNR_value_min_range  rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:double.
+improvit:iNR_value_max_range   rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:double.
+improvit:iNR_value_unit  rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:string.
+improvit:cRP_value rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:cRP_value_min_range  rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:cRP_value_max_range   rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:cRP_value_unit  rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:string.
+improvit:gGT_value rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:gGT_value_min_range  rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:gGT_value_max_range   rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:gGT_value_unit  rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:string.
+improvit:leukocytes_in_Tsd rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:double.
+improvit:leukocytes_in_Tsd_min_range  rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:double.
+improvit:leukocytes_in_Tsd_max_range   rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:double.
+improvit:leukocytes_in_Tsd_unit  rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:string.
+improvit:platelets_in_Tsd rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:platelets_in_Tsd_min_range  rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:platelets_in_Tsd_max_range   rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:positiveInteger.
+improvit:platelets_in_Tsd_unit  rdfs:domain improvit:Heamatology_Measurements;
+rdfs:range   xsd:string.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Constraints
