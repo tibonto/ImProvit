@@ -84,8 +84,8 @@ improvit:qualification   a rdf:Property.
 improvit:position  a rdf:Property.
 improvit:institue_name  a rdf:Property.
 improvit:full_institue_name  a rdf:Property.
-improvit:research_group    a rfd:Property.
-improvit:contact_email   a rdf:Property.
+improvit:research_group  a rdf:Property.
+improvit:contact_email  a rdf:Property.
 improvit:antigen_name a rdf:Property.
 improvit:nCBTaxon   a rdf:Property.
 improvit:pathological_hepatobiliary_system  a rdf:Property.
