@@ -1,2 +1,2 @@
 # ImProvit
-Instance of ImProvit to be used in VoCAL.
+Instance of ImProvit to be used in VoCOL.
