@@ -1,2 +1,2 @@
 # ImProvit
-Instance of ImProvit to be used in VoCol. 
+A unified schema for representing data integrated in the ImProvit knowledge graph.
