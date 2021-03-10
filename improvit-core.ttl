@@ -37,7 +37,7 @@ improvit:Anti_HIV_Measurement   a   rdfs:Class.
 improvit:Anti_HCV_Measurement   a   rdfs:Class.
 improvit:Anti_HDV_Measurement   a   rdfs:Class.
 improvit:Conductor_Person   a   rdfs:Class.
-improvit: Conductor_Study  a   rdfs:Class.
+improvit:Conductor_Study  a   rdfs:Class.
 improvit:Infectious_agent  a   rdfs:Class.
 improvit:Taxonomy  a   rdfs:Class.
 improvit:Disease  a   rdfs:Class.
