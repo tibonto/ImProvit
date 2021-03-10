@@ -30,7 +30,7 @@ improvit:Anti_HBc_Measurement  a   rdfs:Class.
 improvit:HBV_Genotype_Measurement   a   rdfs:Class.
 improvit:HBeAg_Measurement   a   rdfs:Class.
 improvit:Liver_function_Measurements  a   rdfs:Class.
-improvit_Heamatology_Measurements   a rdfs:class.
+improvit:Heamatology_Measurements   a rdfs:class.
 improvit:HBsAg_Measurement  a   rdfs:Class.
 improvit:HBV_DNA_Measurement   a   rdfs:Class.
 improvit:Anti_HIV_Measurement   a   rdfs:Class.
