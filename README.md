@@ -1,2 +1,1 @@
-# ImProvit
-A unified schema for representing data integrated in the ImProvit knowledge graph.
+A unified schema for representing data integrated into the ImProVIT knowledge graph. This schema consists of classes and properties presented in data sources that immunology datasets and relevant knowledge covering vaccination, infectious disease, and transplantation.
