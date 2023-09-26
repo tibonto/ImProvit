@@ -1,13 +1,11 @@
-@prefix : <urn:webprotege:ontology:3e5e75f0-214f-41d5-942e-115a83fc0e4b#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix improvit: <http://www.project-improvit.de/vocab/> .
-@base <urn:webprotege:ontology:3e5e75f0-214f-41d5-942e-115a83fc0e4b> .
 
-<urn:webprotege:ontology:3e5e75f0-214f-41d5-942e-115a83fc0e4b> rdf:type owl:Ontology .
+<https://github.com/tibonto/ImProvit/blob/master/improvit-core.ttl> rdf:type owl:Ontology.
 
 
 ###  http://www.project-improvit.de/vocab/Person
@@ -36,13 +34,12 @@ improvit:SufferClass rdf:type owl:Class ;
                     rdfs:label "SufferClass"@en ;
                     owl:versionInfo "v1.0"^^xsd:string .
 
-
 ###  http://www.project-improvit.de/vocab/sufferingPerson
 improvit:sufferingPerson rdf:type owl:ObjectProperty ;
-                        rdfs:domain improvit:SufferClass ;
-                        rdfs:range improvit:Donor ;
-                        <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
-                        rdfs:comment "This property shows the association of donor to suffer."@en ;
-                        rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
-                        rdfs:label "sufferingPerson"@en ;
-                        owl:versionInfo "v1.0"@en .
+                         rdfs:domain improvit:SufferClass ;
+                         rdfs:range improvit:Person ;
+                         <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                         rdfs:comment "This property shows the association of donor to suffer."@en ;
+                         rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+                         rdfs:label "sufferingPerson"@en ;
+                         owl:versionInfo "v1.0"@en .
