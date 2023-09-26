@@ -1,1 +1,1 @@
-A unified schema for representing data integrated into the ImProVIT knowledge graph. This schema consists of classes and properties covering datasets and relevant knowledge about vaccination, infectious disease, and liver transplantation.
+A unified schema for representing data integrated into the ImProVIT knowledge graph. This schema consists of classes and properties covering datasets and relevant knowledge about vaccination, infectious disease, and liver transplantation. The details can be found from a ​consistent URI: http://ontology.tib.eu/ImProvit/
