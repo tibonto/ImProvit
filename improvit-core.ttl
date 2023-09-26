@@ -1051,7 +1051,7 @@ improvit:workingWith rdf:type owl:ObjectProperty ;
 
 ###  http://www.project-improvit.de/vocab/ageDescription
 improvit:ageDescription rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf owl:topDataProperty ;
+
                         rdfs:domain improvit:Person ;
                         rdfs:range xsd:string ;
                         <http://purl.org/dc/elements/1.1/date> "2023-01-13T00:00:00"@en ;
@@ -1063,7 +1063,7 @@ improvit:ageDescription rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/categorize
 improvit:categorize rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf owl:topDataProperty ;
+
                     rdfs:domain improvit:CellAnalysisParameter ;
                     rdfs:range xsd:anyURI ;
                     <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -1075,7 +1075,7 @@ improvit:categorize rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasAge
 improvit:hasAge rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf owl:topDataProperty ;
+
                 rdfs:domain improvit:Person ;
                 rdfs:range xsd:nonNegativeInteger ;
                 <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1087,7 +1087,7 @@ improvit:hasAge rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasAgeUnit
 improvit:hasAgeUnit rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf owl:topDataProperty ;
+
                     rdfs:domain improvit:Person ;
                     rdfs:range xsd:string ;
                     <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1099,7 +1099,7 @@ improvit:hasAgeUnit rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasAlleleGroup
 improvit:hasAlleleGroup rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf owl:topDataProperty ;
+
                         rdfs:domain improvit:AlleleID ;
                         rdfs:range xsd:string ;
                         <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1111,7 +1111,7 @@ improvit:hasAlleleGroup rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasAminoAcidSequenceName
 improvit:hasAminoAcidSequenceName rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf owl:topDataProperty ;
+
                                   rdfs:domain improvit:AminoAcidSequence ;
                                   rdfs:range xsd:string ;
                                   <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1123,7 +1123,7 @@ improvit:hasAminoAcidSequenceName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasAnnotationCUI
 improvit:hasAnnotationCUI rdf:type owl:DatatypeProperty ;
-                          rdfs:subPropertyOf owl:topDataProperty ;
+
                           rdfs:domain improvit:Annotation ;
                           rdfs:range xsd:string ;
                           <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1135,7 +1135,7 @@ improvit:hasAnnotationCUI rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasAnnotationDBpedia
 improvit:hasAnnotationDBpedia rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf owl:topDataProperty ;
+
                               rdfs:domain improvit:Annotation ;
                               rdfs:range xsd:string ;
                               <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1147,7 +1147,7 @@ improvit:hasAnnotationDBpedia rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasAnnotationWikidata
 improvit:hasAnnotationWikidata rdf:type owl:DatatypeProperty ;
-                               rdfs:subPropertyOf owl:topDataProperty ;
+
                                rdfs:domain improvit:Annotation ;
                                rdfs:range xsd:string ;
                                <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1159,7 +1159,7 @@ improvit:hasAnnotationWikidata rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasAntibodyName
 improvit:hasAntibodyName rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf owl:topDataProperty ;
+
                          rdfs:domain improvit:Antibody ;
                          rdfs:range xsd:string ;
                          <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1171,7 +1171,7 @@ improvit:hasAntibodyName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasAntigenName
 improvit:hasAntigenName rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf owl:topDataProperty ;
+
                         rdfs:domain improvit:Antigen ;
                         rdfs:range xsd:string ;
                         <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1183,7 +1183,7 @@ improvit:hasAntigenName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasApplicationDay
 improvit:hasApplicationDay rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf owl:topDataProperty ;
+
                            rdfs:domain improvit:Vaccination ;
                            rdfs:range xsd:date ;
                            <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1195,7 +1195,7 @@ improvit:hasApplicationDay rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasApplicationMonth
 improvit:hasApplicationMonth rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf owl:topDataProperty ;
+
                              rdfs:domain improvit:Vaccination ;
                              rdfs:range xsd:date ;
                              <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1206,7 +1206,7 @@ improvit:hasApplicationMonth rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasApplicationYear
 improvit:hasApplicationYear rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf owl:topDataProperty ;
+
                             rdfs:domain improvit:Vaccination ;
                             rdfs:range xsd:date ;
                             <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1218,7 +1218,7 @@ improvit:hasApplicationYear rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasBiologicalComponentName
 improvit:hasBiologicalComponentName rdf:type owl:DatatypeProperty ;
-                                    rdfs:subPropertyOf owl:topDataProperty ;
+
                                     rdfs:domain improvit:BiologicalComponent ;
                                     rdfs:range xsd:string ;
                                     <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -1230,7 +1230,7 @@ improvit:hasBiologicalComponentName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasBiologicalImmunologicalProcessName
 improvit:hasBiologicalImmunologicalProcessName rdf:type owl:DatatypeProperty ;
-                                               rdfs:subPropertyOf owl:topDataProperty ;
+
                                                rdfs:domain improvit:BiologicalImmunologicalProcess ;
                                                rdfs:range xsd:string ;
                                                <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1242,7 +1242,7 @@ improvit:hasBiologicalImmunologicalProcessName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasBiologicalProcess
 improvit:hasBiologicalProcess rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf owl:topDataProperty ;
+
                               rdfs:domain improvit:InformationAbout ;
                               rdfs:range xsd:anyURI ;
                               <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -1254,7 +1254,7 @@ improvit:hasBiologicalProcess rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasBiosampleAmount
 improvit:hasBiosampleAmount rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf owl:topDataProperty ;
+
                             rdfs:domain improvit:Donate ;
                             rdfs:range xsd:nonNegativeInteger ;
                             <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1266,7 +1266,7 @@ improvit:hasBiosampleAmount rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasBiosampleAmountUnit
 improvit:hasBiosampleAmountUnit rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:Donate ;
                                 rdfs:range xsd:string ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1278,7 +1278,7 @@ improvit:hasBiosampleAmountUnit rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasBiosampleDay
 improvit:hasBiosampleDay rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf owl:topDataProperty ;
+
                          rdfs:domain improvit:Donate ;
                          rdfs:range xsd:date ;
                          <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1290,7 +1290,7 @@ improvit:hasBiosampleDay rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasBiosampleDonationDate
 improvit:hasBiosampleDonationDate rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf owl:topDataProperty ;
+
                                   rdfs:domain improvit:Donate ;
                                   rdfs:range xsd:date ;
                                   <http://purl.org/dc/elements/1.1/date> "2023-01-13T00:00:00"@en ;
@@ -1302,7 +1302,7 @@ improvit:hasBiosampleDonationDate rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasBiosampleDonationDay
 improvit:hasBiosampleDonationDay rdf:type owl:DatatypeProperty ;
-                                 rdfs:subPropertyOf owl:topDataProperty ;
+
                                  rdfs:domain improvit:Donate ;
                                  rdfs:range xsd:date ;
                                  <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1314,7 +1314,7 @@ improvit:hasBiosampleDonationDay rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasBiosampleDonationMonth
 improvit:hasBiosampleDonationMonth rdf:type owl:DatatypeProperty ;
-                                   rdfs:subPropertyOf owl:topDataProperty ;
+
                                    rdfs:domain improvit:Donate ;
                                    rdfs:range xsd:date ;
                                    <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1326,7 +1326,7 @@ improvit:hasBiosampleDonationMonth rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasBiosampleDonationTime
 improvit:hasBiosampleDonationTime rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf owl:topDataProperty ;
+
                                   rdfs:domain improvit:Donate ;
                                   rdfs:range xsd:date ;
                                   <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1338,7 +1338,7 @@ improvit:hasBiosampleDonationTime rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasBiosampleDonationYear
 improvit:hasBiosampleDonationYear rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf owl:topDataProperty ;
+
                                   rdfs:domain improvit:Donate ;
                                   rdfs:range xsd:date ;
                                   rdfs:comment "This attribute represents the year in which the biosample was collected."@en ;
@@ -1349,7 +1349,7 @@ improvit:hasBiosampleDonationYear rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasBiosampleName
 improvit:hasBiosampleName rdf:type owl:DatatypeProperty ;
-                          rdfs:subPropertyOf owl:topDataProperty ;
+
                           rdfs:domain improvit:Biosample ;
                           rdfs:range xsd:string ;
                           <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1361,7 +1361,7 @@ improvit:hasBiosampleName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasBufferComponentName
 improvit:hasBufferComponentName rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:BufferComponent ;
                                 rdfs:range xsd:string ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1373,7 +1373,7 @@ improvit:hasBufferComponentName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasBufferComponents
 improvit:hasBufferComponents rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf owl:topDataProperty ;
+
                              rdfs:domain improvit:ProtocolBuffer ;
                              rdfs:range xsd:string ;
                              <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -1385,7 +1385,7 @@ improvit:hasBufferComponents rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasBufferDenominationName
 improvit:hasBufferDenominationName rdf:type owl:DatatypeProperty ;
-                                   rdfs:subPropertyOf owl:topDataProperty ;
+
                                    rdfs:domain improvit:ProtocolBuffer ;
                                    rdfs:range xsd:string ;
                                    <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1397,7 +1397,7 @@ improvit:hasBufferDenominationName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasCMVStatus
 improvit:hasCMVStatus rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
+
                       rdfs:domain improvit:Person ;
                       rdfs:range xsd:nonNegativeInteger ;
                       <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1409,7 +1409,7 @@ improvit:hasCMVStatus rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasCellName
 improvit:hasCellName rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf owl:topDataProperty ;
+
                      rdfs:domain improvit:Cell ;
                      rdfs:range xsd:string ;
                      <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -1421,7 +1421,7 @@ improvit:hasCellName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasClone
 improvit:hasClone rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf owl:topDataProperty ;
+
                   rdfs:domain improvit:FluorochromeConjugatedAntibody ;
                   rdfs:range xsd:string ;
                   <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1433,7 +1433,7 @@ improvit:hasClone rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasColdIschaemicTime
 improvit:hasColdIschaemicTime rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf owl:topDataProperty ;
+
                               rdfs:domain improvit:Organ ;
                               rdfs:range xsd:nonNegativeInteger ;
                               <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -1445,7 +1445,7 @@ improvit:hasColdIschaemicTime rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasColdIschaemicTimeUnit
 improvit:hasColdIschaemicTimeUnit rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf owl:topDataProperty ;
+
                                   rdfs:domain improvit:Organ ;
                                   rdfs:range xsd:string ;
                                   <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -1457,7 +1457,7 @@ improvit:hasColdIschaemicTimeUnit rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasConductorPersonEmailAddress
 improvit:hasConductorPersonEmailAddress rdf:type owl:DatatypeProperty ;
-                                        rdfs:subPropertyOf owl:topDataProperty ;
+
                                         rdfs:domain improvit:ConductorPerson ;
                                         rdfs:range xsd:string ;
                                         <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1469,7 +1469,7 @@ improvit:hasConductorPersonEmailAddress rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasConductorPersonID
 improvit:hasConductorPersonID rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf owl:topDataProperty ;
+
                               rdfs:domain improvit:ConductorPerson ;
                               rdfs:range xsd:string ;
                               <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1481,7 +1481,7 @@ improvit:hasConductorPersonID rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasConductorPersonName
 improvit:hasConductorPersonName rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:ConductorPerson ;
                                 rdfs:range xsd:string ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1493,7 +1493,7 @@ improvit:hasConductorPersonName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasConductorPersonOccupation
 improvit:hasConductorPersonOccupation rdf:type owl:DatatypeProperty ;
-                                      rdfs:subPropertyOf owl:topDataProperty ;
+
                                       rdfs:domain improvit:ConductorPerson ;
                                       rdfs:range xsd:string ;
                                       <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1505,7 +1505,7 @@ improvit:hasConductorPersonOccupation rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDateOfDeath
 improvit:hasDateOfDeath rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf owl:topDataProperty ;
+
                         rdfs:domain improvit:OrganDonor ;
                         rdfs:range xsd:date ;
                         <http://purl.org/dc/elements/1.1/date> "2023-01-13T00:00:00"@en ;
@@ -1517,7 +1517,7 @@ improvit:hasDateOfDeath rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDifferenceInNonCodingRegion
 improvit:hasDifferenceInNonCodingRegion rdf:type owl:DatatypeProperty ;
-                                        rdfs:subPropertyOf owl:topDataProperty ;
+
                                         rdfs:domain improvit:AlleleID ;
                                         rdfs:range xsd:string ;
                                         <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1529,7 +1529,7 @@ improvit:hasDifferenceInNonCodingRegion rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDisorderCurrentStatus
 improvit:hasDisorderCurrentStatus rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf owl:topDataProperty ;
+
                                   rdfs:domain improvit:Disorder ;
                                   rdfs:range xsd:string ;
                                   <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1541,7 +1541,7 @@ improvit:hasDisorderCurrentStatus rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDisorderInformationDate
 improvit:hasDisorderInformationDate rdf:type owl:DatatypeProperty ;
-                                    rdfs:subPropertyOf owl:topDataProperty ;
+
                                     rdfs:domain improvit:Disorder ;
                                     rdfs:range xsd:date ;
                                     <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1553,7 +1553,7 @@ improvit:hasDisorderInformationDate rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDisorderName
 improvit:hasDisorderName rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf owl:topDataProperty ;
+
                          rdfs:domain improvit:Disorder ;
                          rdfs:range xsd:string ;
                          <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1565,7 +1565,7 @@ improvit:hasDisorderName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDisorderOccuranceInSameYear
 improvit:hasDisorderOccuranceInSameYear rdf:type owl:DatatypeProperty ;
-                                        rdfs:subPropertyOf owl:topDataProperty ;
+
                                         rdfs:domain improvit:Disorder ;
                                         rdfs:range xsd:nonNegativeInteger ;
                                         <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -1577,7 +1577,7 @@ improvit:hasDisorderOccuranceInSameYear rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDisorderOccuranceNumber
 improvit:hasDisorderOccuranceNumber rdf:type owl:DatatypeProperty ;
-                                    rdfs:subPropertyOf owl:topDataProperty ;
+
                                     rdfs:domain improvit:Disorder ;
                                     rdfs:range xsd:nonNegativeInteger ;
                                     <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1589,7 +1589,7 @@ improvit:hasDisorderOccuranceNumber rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDisorderReportDay
 improvit:hasDisorderReportDay rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf owl:topDataProperty ;
+
                               rdfs:domain improvit:Disorder ;
                               rdfs:range xsd:date ;
                               <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1601,7 +1601,7 @@ improvit:hasDisorderReportDay rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDisorderReportMonth
 improvit:hasDisorderReportMonth rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:Disorder ;
                                 rdfs:range xsd:date ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1613,7 +1613,7 @@ improvit:hasDisorderReportMonth rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDisorderReportSource
 improvit:hasDisorderReportSource rdf:type owl:DatatypeProperty ;
-                                 rdfs:subPropertyOf owl:topDataProperty ;
+
                                  rdfs:domain improvit:Disorder ;
                                  rdfs:range xsd:string ;
                                  <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1625,7 +1625,7 @@ improvit:hasDisorderReportSource rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDisorderReportYear
 improvit:hasDisorderReportYear rdf:type owl:DatatypeProperty ;
-                               rdfs:subPropertyOf owl:topDataProperty ;
+
                                rdfs:domain improvit:Disorder ;
                                rdfs:range xsd:date ;
                                <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1637,7 +1637,7 @@ improvit:hasDisorderReportYear rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDrugActiveSubstance
 improvit:hasDrugActiveSubstance rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:MedicalDrug ;
                                 rdfs:range xsd:string ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1649,7 +1649,7 @@ improvit:hasDrugActiveSubstance rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDrugDosage
 improvit:hasDrugDosage rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf owl:topDataProperty ;
+
                        rdfs:domain improvit:Prescribe ;
                        rdfs:range xsd:nonNegativeInteger ;
                        rdfs:label "hasDrugDosage"@en .
@@ -1657,7 +1657,7 @@ improvit:hasDrugDosage rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDrugDosageUnit
 improvit:hasDrugDosageUnit rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf owl:topDataProperty ;
+
                            rdfs:domain improvit:Prescribe ;
                            rdfs:range xsd:string ;
                            rdfs:label "hasDrugDosageUnit"@en .
@@ -1665,7 +1665,7 @@ improvit:hasDrugDosageUnit rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDrugForm
 improvit:hasDrugForm rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf owl:topDataProperty ;
+
                      rdfs:domain improvit:MedicalDrug ;
                      rdfs:range xsd:string ;
                      <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1677,7 +1677,7 @@ improvit:hasDrugForm rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDrugGroup
 improvit:hasDrugGroup rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
+
                       rdfs:domain improvit:MedicalDrug ;
                       rdfs:range xsd:string ;
                       <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1689,7 +1689,7 @@ improvit:hasDrugGroup rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDrugInformationCollectionDate
 improvit:hasDrugInformationCollectionDate rdf:type owl:DatatypeProperty ;
-                                          rdfs:subPropertyOf owl:topDataProperty ;
+
                                           rdfs:domain improvit:Prescribe ;
                                           rdfs:range xsd:date ;
                                           <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1701,7 +1701,7 @@ improvit:hasDrugInformationCollectionDate rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDrugIntakeEndMonth
 improvit:hasDrugIntakeEndMonth rdf:type owl:DatatypeProperty ;
-                               rdfs:subPropertyOf owl:topDataProperty ;
+
                                rdfs:domain improvit:Prescribe ;
                                rdfs:range xsd:date ;
                                <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1713,7 +1713,7 @@ improvit:hasDrugIntakeEndMonth rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDrugIntakeEndYear
 improvit:hasDrugIntakeEndYear rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf owl:topDataProperty ;
+
                               rdfs:domain improvit:Prescribe ;
                               rdfs:range xsd:date ;
                               <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1725,7 +1725,7 @@ improvit:hasDrugIntakeEndYear rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDrugIntakeInfo
 improvit:hasDrugIntakeInfo rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf owl:topDataProperty ;
+
                            rdfs:domain improvit:Prescribe ;
                            rdfs:range xsd:string ;
                            rdfs:label "hasDrugIntakeInfo"@en .
@@ -1733,7 +1733,7 @@ improvit:hasDrugIntakeInfo rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDrugIntakeStartMonth
 improvit:hasDrugIntakeStartMonth rdf:type owl:DatatypeProperty ;
-                                 rdfs:subPropertyOf owl:topDataProperty ;
+
                                  rdfs:domain improvit:Prescribe ;
                                  rdfs:range xsd:date ;
                                  <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1745,7 +1745,7 @@ improvit:hasDrugIntakeStartMonth rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDrugIntakeStartYear
 improvit:hasDrugIntakeStartYear rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:Prescribe ;
                                 rdfs:range xsd:date ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1757,7 +1757,7 @@ improvit:hasDrugIntakeStartYear rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDrugPrescriptionDate
 improvit:hasDrugPrescriptionDate rdf:type owl:DatatypeProperty ;
-                                 rdfs:subPropertyOf owl:topDataProperty ;
+
                                  rdfs:domain improvit:Prescribe ;
                                  rdfs:range xsd:date ;
                                  <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1769,7 +1769,7 @@ improvit:hasDrugPrescriptionDate rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDrugReportDate
 improvit:hasDrugReportDate rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf owl:topDataProperty ;
+
                            rdfs:domain improvit:Prescribe ;
                            rdfs:range xsd:date ;
                            <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1781,7 +1781,7 @@ improvit:hasDrugReportDate rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasDrugReportSource
 improvit:hasDrugReportSource rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf owl:topDataProperty ;
+
                              rdfs:domain improvit:Prescribe ;
                              rdfs:range xsd:string ;
                              <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -1793,7 +1793,7 @@ improvit:hasDrugReportSource rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasEBVStatus
 improvit:hasEBVStatus rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
+
                       rdfs:domain improvit:RecipientofTransplantOrgan ;
                       rdfs:range xsd:string ;
                       <http://purl.org/dc/elements/1.1/date> "2023-01-13T00:00:00"@en ;
@@ -1805,7 +1805,7 @@ improvit:hasEBVStatus rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasEducationDegreeName
 improvit:hasEducationDegreeName rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:Education ;
                                 rdfs:range xsd:string ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1818,7 +1818,7 @@ improvit:hasEducationDegreeName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasEducationDegreeNameLanguage
 improvit:hasEducationDegreeNameLanguage rdf:type owl:DatatypeProperty ;
-                                        rdfs:subPropertyOf owl:topDataProperty ;
+
                                         rdfs:domain improvit:Education ;
                                         rdfs:range xsd:string ;
                                         <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -1830,7 +1830,7 @@ improvit:hasEducationDegreeNameLanguage rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasEthnicGroup
 improvit:hasEthnicGroup rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf owl:topDataProperty ;
+
                         rdfs:domain improvit:Person ;
                         rdfs:range xsd:string ;
                         <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1842,7 +1842,7 @@ improvit:hasEthnicGroup rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpObservation
 improvit:hasExpObservation rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf owl:topDataProperty ;
+
                            rdfs:domain improvit:ExperimentalObservation ;
                            rdfs:range xsd:string ;
                            <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1854,7 +1854,7 @@ improvit:hasExpObservation rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpProtocolCompanyName
 improvit:hasExpProtocolCompanyName rdf:type owl:DatatypeProperty ;
-                                   rdfs:subPropertyOf owl:topDataProperty ;
+
                                    rdfs:domain improvit:ExperimentalProtocol ;
                                    rdfs:range xsd:string ;
                                    <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1866,7 +1866,7 @@ improvit:hasExpProtocolCompanyName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpProtocolMachine
 improvit:hasExpProtocolMachine rdf:type owl:DatatypeProperty ;
-                               rdfs:subPropertyOf owl:topDataProperty ;
+
                                rdfs:domain improvit:ExperimentalProtocol ;
                                rdfs:range xsd:string ;
                                <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1878,7 +1878,7 @@ improvit:hasExpProtocolMachine rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpProtocolName
 improvit:hasExpProtocolName rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf owl:topDataProperty ;
+
                             rdfs:domain improvit:ExperimentalProtocol ,
                                         improvit:Parameter ;
                             rdfs:range xsd:string ;
@@ -1891,7 +1891,7 @@ improvit:hasExpProtocolName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpProtocolSoftware
 improvit:hasExpProtocolSoftware rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:ExperimentalProtocol ;
                                 rdfs:range xsd:string ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1903,7 +1903,7 @@ improvit:hasExpProtocolSoftware rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpProtocolSource
 improvit:hasExpProtocolSource rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf owl:topDataProperty ;
+
                               rdfs:domain improvit:ExperimentalProtocol ;
                               rdfs:range xsd:string ;
                               <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1915,7 +1915,7 @@ improvit:hasExpProtocolSource rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpProtocolVersion
 improvit:hasExpProtocolVersion rdf:type owl:DatatypeProperty ;
-                               rdfs:subPropertyOf owl:topDataProperty ;
+
                                rdfs:domain improvit:ExperimentalProtocol ;
                                rdfs:range xsd:string ;
                                <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1927,7 +1927,7 @@ improvit:hasExpProtocolVersion rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpSampleAmount
 improvit:hasExpSampleAmount rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf owl:topDataProperty ;
+
                             rdfs:domain improvit:ExperimentalSample ;
                             rdfs:range xsd:nonNegativeInteger ;
                             <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -1939,7 +1939,7 @@ improvit:hasExpSampleAmount rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpSampleAmountUnit
 improvit:hasExpSampleAmountUnit rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:ExperimentalSample ;
                                 rdfs:range xsd:string ;
                                 <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -1951,7 +1951,7 @@ improvit:hasExpSampleAmountUnit rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpSampleExtractionDay
 improvit:hasExpSampleExtractionDay rdf:type owl:DatatypeProperty ;
-                                   rdfs:subPropertyOf owl:topDataProperty ;
+
                                    rdfs:domain improvit:ExtractSample ;
                                    rdfs:range xsd:date ;
                                    <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1963,7 +1963,7 @@ improvit:hasExpSampleExtractionDay rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpSampleExtractionMonth
 improvit:hasExpSampleExtractionMonth rdf:type owl:DatatypeProperty ;
-                                     rdfs:subPropertyOf owl:topDataProperty ;
+
                                      rdfs:domain improvit:ExtractSample ;
                                      rdfs:range xsd:date ;
                                      <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1975,7 +1975,7 @@ improvit:hasExpSampleExtractionMonth rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpSampleExtractionYear
 improvit:hasExpSampleExtractionYear rdf:type owl:DatatypeProperty ;
-                                    rdfs:subPropertyOf owl:topDataProperty ;
+
                                     rdfs:domain improvit:ExtractSample ;
                                     rdfs:range xsd:date ;
                                     <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -1987,7 +1987,7 @@ improvit:hasExpSampleExtractionYear rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpSampleName
 improvit:hasExpSampleName rdf:type owl:DatatypeProperty ;
-                          rdfs:subPropertyOf owl:topDataProperty ;
+
                           rdfs:domain improvit:ExperimentalSample ;
                           rdfs:range xsd:string ;
                           <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -1999,7 +1999,7 @@ improvit:hasExpSampleName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpTimeStampDay
 improvit:hasExpTimeStampDay rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf owl:topDataProperty ;
+
                             rdfs:domain improvit:Experiment ;
                             rdfs:range xsd:date ;
                             <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2011,7 +2011,7 @@ improvit:hasExpTimeStampDay rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpTimeStampMonth
 improvit:hasExpTimeStampMonth rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf owl:topDataProperty ;
+
                               rdfs:domain improvit:Experiment ;
                               rdfs:range xsd:date ;
                               <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2023,7 +2023,7 @@ improvit:hasExpTimeStampMonth rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExpTimeStampYear
 improvit:hasExpTimeStampYear rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf owl:topDataProperty ;
+
                              rdfs:domain improvit:Experiment ;
                              rdfs:range xsd:date ;
                              <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2035,7 +2035,7 @@ improvit:hasExpTimeStampYear rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExperimentalProtocol
 improvit:hasExperimentalProtocol rdf:type owl:DatatypeProperty ;
-                                 rdfs:subPropertyOf owl:topDataProperty ;
+
                                  rdfs:domain improvit:ExtractSample ;
                                  rdfs:range xsd:anyURI ;
                                  <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -2047,7 +2047,7 @@ improvit:hasExperimentalProtocol rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasExperimentalProtocolName
 improvit:hasExperimentalProtocolName rdf:type owl:DatatypeProperty ;
-                                     rdfs:subPropertyOf owl:topDataProperty ;
+
                                      rdfs:domain improvit:ExperimentalProtocol ;
                                      rdfs:range xsd:string ;
                                      <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2059,7 +2059,7 @@ improvit:hasExperimentalProtocolName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasFluorophore
 improvit:hasFluorophore rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf owl:topDataProperty ;
+
                         rdfs:domain improvit:FluorochromeConjugatedAntibody ;
                         rdfs:range xsd:string ;
                         <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2071,7 +2071,7 @@ improvit:hasFluorophore rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasGenotype
 improvit:hasGenotype rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf owl:topDataProperty ;
+
                      rdfs:domain improvit:AlleleID ;
                      rdfs:range xsd:string ;
                      <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2083,7 +2083,7 @@ improvit:hasGenotype rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasHLAClass
 improvit:hasHLAClass rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf owl:topDataProperty ;
+
                      rdfs:domain improvit:HLAGene ;
                      rdfs:range xsd:string ;
                      rdfs:comment "This property shows the name of  MHC Class that gene has, e.g;. Class I or Class II."@en ;
@@ -2095,7 +2095,7 @@ improvit:hasHLAClass rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasHLAPrefix
 improvit:hasHLAPrefix rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
+
                       rdfs:domain improvit:AlleleID ;
                       rdfs:range xsd:string ;
                       <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2107,7 +2107,7 @@ improvit:hasHLAPrefix rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasHabitFrequency
 improvit:hasHabitFrequency rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf owl:topDataProperty ;
+
                            rdfs:domain improvit:Habit ;
                            rdfs:range xsd:string ;
                            <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2119,7 +2119,7 @@ improvit:hasHabitFrequency rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasHabitName
 improvit:hasHabitName rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
+
                       rdfs:domain improvit:Habit ;
                       rdfs:range xsd:string ;
                       <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2131,7 +2131,7 @@ improvit:hasHabitName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasHeight
 improvit:hasHeight rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf owl:topDataProperty ;
+
                    rdfs:domain improvit:Attend ;
                    rdfs:range xsd:nonNegativeInteger ;
                    <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2143,7 +2143,7 @@ improvit:hasHeight rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasHeightUnit
 improvit:hasHeightUnit rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf owl:topDataProperty ;
+
                        rdfs:domain improvit:Attend ;
                        rdfs:range xsd:string ;
                        <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2155,7 +2155,7 @@ improvit:hasHeightUnit rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasImmuneResponse
 improvit:hasImmuneResponse rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf owl:topDataProperty ;
+
                            rdfs:domain improvit:ImmuneResponse ;
                            rdfs:range xsd:string ;
                            <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2167,7 +2167,7 @@ improvit:hasImmuneResponse rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasInfectiousAgentName
 improvit:hasInfectiousAgentName rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:InfectiousAgent ;
                                 rdfs:range xsd:string ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -2179,7 +2179,7 @@ improvit:hasInfectiousAgentName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasInfluenzaVaccineSeason
 improvit:hasInfluenzaVaccineSeason rdf:type owl:DatatypeProperty ;
-                                   rdfs:subPropertyOf owl:topDataProperty ;
+
                                    rdfs:domain improvit:Utilize ;
                                    rdfs:range xsd:string ;
                                    <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -2191,7 +2191,7 @@ improvit:hasInfluenzaVaccineSeason rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasInformationAcquringPerson
 improvit:hasInformationAcquringPerson rdf:type owl:DatatypeProperty ;
-                                      rdfs:subPropertyOf owl:topDataProperty ;
+
                                       rdfs:domain improvit:Utilize ;
                                       rdfs:range xsd:string ;
                                       <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -2203,7 +2203,7 @@ improvit:hasInformationAcquringPerson rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasInstituteEmailAddress
 improvit:hasInstituteEmailAddress rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf owl:topDataProperty ;
+
                                   rdfs:domain improvit:Institute ;
                                   rdfs:range xsd:string ;
                                   <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2215,7 +2215,7 @@ improvit:hasInstituteEmailAddress rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasInstituteFullName
 improvit:hasInstituteFullName rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf owl:topDataProperty ;
+
                               rdfs:domain improvit:Institute ;
                               rdfs:range xsd:string ;
                               <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2227,7 +2227,7 @@ improvit:hasInstituteFullName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasInstituteID
 improvit:hasInstituteID rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf owl:topDataProperty ;
+
                         rdfs:domain improvit:Institute ;
                         rdfs:range xsd:string ;
                         <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2239,7 +2239,7 @@ improvit:hasInstituteID rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasInstituteName
 improvit:hasInstituteName rdf:type owl:DatatypeProperty ;
-                          rdfs:subPropertyOf owl:topDataProperty ;
+
                           rdfs:domain improvit:Institute ;
                           rdfs:range xsd:string ;
                           rdfs:label "hasInstituteName"@en .
@@ -2247,7 +2247,7 @@ improvit:hasInstituteName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasInstitutePhoneNumber
 improvit:hasInstitutePhoneNumber rdf:type owl:DatatypeProperty ;
-                                 rdfs:subPropertyOf owl:topDataProperty ;
+
                                  rdfs:domain improvit:Institute ;
                                  rdfs:range xsd:string ;
                                  <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2259,7 +2259,7 @@ improvit:hasInstitutePhoneNumber rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasInstitutePostalAddress
 improvit:hasInstitutePostalAddress rdf:type owl:DatatypeProperty ;
-                                   rdfs:subPropertyOf owl:topDataProperty ;
+
                                    rdfs:domain improvit:Institute ;
                                    rdfs:range xsd:string ;
                                    <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2271,7 +2271,7 @@ improvit:hasInstitutePostalAddress rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasInterventionDate
 improvit:hasInterventionDate rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf owl:topDataProperty ;
+
                              rdfs:domain improvit:MedicationTreatment ;
                              rdfs:range xsd:date ;
                              <http://purl.org/dc/elements/1.1/date> "2023-01-13T00:00:00"@en ;
@@ -2283,7 +2283,7 @@ improvit:hasInterventionDate rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasInterventionDay
 improvit:hasInterventionDay rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf owl:topDataProperty ;
+
                             rdfs:domain improvit:Intervention ;
                             rdfs:range xsd:date ;
                             <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -2295,7 +2295,7 @@ improvit:hasInterventionDay rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasInterventionLabel
 improvit:hasInterventionLabel rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf owl:topDataProperty ;
+
                               rdfs:domain improvit:InterventionType ;
                               rdfs:range xsd:string ;
                               <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -2307,7 +2307,7 @@ improvit:hasInterventionLabel rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasInterventionMonth
 improvit:hasInterventionMonth rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf owl:topDataProperty ;
+
                               rdfs:domain improvit:Intervention ;
                               rdfs:range xsd:date ;
                               <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -2319,7 +2319,7 @@ improvit:hasInterventionMonth rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasInterventionNumber
 improvit:hasInterventionNumber rdf:type owl:DatatypeProperty ;
-                               rdfs:subPropertyOf owl:topDataProperty ;
+
                                rdfs:domain improvit:Intervention ;
                                rdfs:range xsd:nonNegativeInteger ;
                                <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -2331,7 +2331,7 @@ improvit:hasInterventionNumber rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasInterventionYear
 improvit:hasInterventionYear rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf owl:topDataProperty ;
+
                              rdfs:domain improvit:Intervention ;
                              rdfs:range xsd:date ;
                              <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -2343,7 +2343,7 @@ improvit:hasInterventionYear rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasLabel
 improvit:hasLabel rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf owl:topDataProperty ;
+
                   rdfs:domain improvit:AlleleID ;
                   rdfs:range xsd:string ;
                   <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2355,7 +2355,7 @@ improvit:hasLabel rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasLivingRelatedDonor
 improvit:hasLivingRelatedDonor rdf:type owl:DatatypeProperty ;
-                               rdfs:subPropertyOf owl:topDataProperty ;
+
                                rdfs:domain improvit:OrganDonor ;
                                rdfs:range xsd:nonNegativeInteger ;
                                <http://purl.org/dc/elements/1.1/date> "2023-01-13T00:00:00"@en ;
@@ -2367,7 +2367,7 @@ improvit:hasLivingRelatedDonor rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasLocusName
 improvit:hasLocusName rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
+
                       rdfs:domain improvit:HLAGene ;
                       rdfs:range xsd:string ;
                       <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2379,7 +2379,7 @@ improvit:hasLocusName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasMeasurementCategorization
 improvit:hasMeasurementCategorization rdf:type owl:DatatypeProperty ;
-                                      rdfs:subPropertyOf owl:topDataProperty ;
+
                                       rdfs:domain improvit:Measurement ;
                                       rdfs:range xsd:string ;
                                       <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2391,7 +2391,7 @@ improvit:hasMeasurementCategorization rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasMeasurementDescription
 improvit:hasMeasurementDescription rdf:type owl:DatatypeProperty ;
-                                   rdfs:subPropertyOf owl:topDataProperty ;
+
                                    rdfs:domain improvit:Measurement ;
                                    rdfs:range xsd:string ;
                                    <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2403,7 +2403,7 @@ improvit:hasMeasurementDescription rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasMeasurementValue
 improvit:hasMeasurementValue rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf owl:topDataProperty ;
+
                              rdfs:domain improvit:Measurement ;
                              rdfs:range xsd:decimal ;
                              <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2415,7 +2415,7 @@ improvit:hasMeasurementValue rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasMeasurementValueUnit
 improvit:hasMeasurementValueUnit rdf:type owl:DatatypeProperty ;
-                                 rdfs:subPropertyOf owl:topDataProperty ;
+
                                  rdfs:domain improvit:Measurement ;
                                  rdfs:range xsd:string ;
                                  <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2427,7 +2427,7 @@ improvit:hasMeasurementValueUnit rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasMedicalDrug
 improvit:hasMedicalDrug rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf owl:topDataProperty ;
+
                         rdfs:domain improvit:MedicationTreatment ;
                         rdfs:range xsd:anyURI ;
                         <http://purl.org/dc/elements/1.1/date> "2023-01-13T00:00:00"^^xsd:dateTime ;
@@ -2439,7 +2439,7 @@ improvit:hasMedicalDrug rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasMediumComponentName
 improvit:hasMediumComponentName rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:MediumComponent ;
                                 rdfs:range xsd:string ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2451,7 +2451,7 @@ improvit:hasMediumComponentName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasMediumComponents
 improvit:hasMediumComponents rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf owl:topDataProperty ;
+
                              rdfs:domain improvit:ProtocolMedium ;
                              rdfs:range xsd:string ;
                              <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -2463,7 +2463,7 @@ improvit:hasMediumComponents rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasMediumDenominationName
 improvit:hasMediumDenominationName rdf:type owl:DatatypeProperty ;
-                                   rdfs:subPropertyOf owl:topDataProperty ;
+
                                    rdfs:domain improvit:UtilizeMaterials ;
                                    rdfs:range xsd:string ;
                                    <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -2475,7 +2475,7 @@ improvit:hasMediumDenominationName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasMethodName
 improvit:hasMethodName rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf owl:topDataProperty ;
+
                        rdfs:domain improvit:Method ;
                        rdfs:range xsd:string ;
                        <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2487,7 +2487,7 @@ improvit:hasMethodName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasNormalRangeOfValue
 improvit:hasNormalRangeOfValue rdf:type owl:DatatypeProperty ;
-                               rdfs:subPropertyOf owl:topDataProperty ;
+
                                rdfs:domain improvit:Define ;
                                rdfs:range xsd:string ;
                                <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2499,7 +2499,7 @@ improvit:hasNormalRangeOfValue rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasNormalRangeValueUnit
 improvit:hasNormalRangeValueUnit rdf:type owl:DatatypeProperty ;
-                                 rdfs:subPropertyOf owl:topDataProperty ;
+
                                  rdfs:domain improvit:Define ;
                                  rdfs:range xsd:string ;
                                  <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2511,7 +2511,7 @@ improvit:hasNormalRangeValueUnit rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasOrganName
 improvit:hasOrganName rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
+
                       rdfs:domain improvit:Organ ;
                       rdfs:range xsd:string ;
                       <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -2523,7 +2523,7 @@ improvit:hasOrganName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasParameterLabel
 improvit:hasParameterLabel rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf owl:topDataProperty ;
+
                            rdfs:domain improvit:ParameterType ;
                            rdfs:range xsd:string ;
                            <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2535,7 +2535,7 @@ improvit:hasParameterLabel rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasParameterName
 improvit:hasParameterName rdf:type owl:DatatypeProperty ;
-                          rdfs:subPropertyOf owl:topDataProperty ;
+
                           rdfs:domain improvit:Parameter ;
                           rdfs:range xsd:string ;
                           <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2547,7 +2547,7 @@ improvit:hasParameterName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasPeptideNumber
 improvit:hasPeptideNumber rdf:type owl:DatatypeProperty ;
-                          rdfs:subPropertyOf owl:topDataProperty ;
+
                           rdfs:domain improvit:PeptideNumber ;
                           rdfs:range xsd:string ;
                           <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2559,7 +2559,7 @@ improvit:hasPeptideNumber rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasPeptidePoolName
 improvit:hasPeptidePoolName rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf owl:topDataProperty ;
+
                             rdfs:domain improvit:PeptidePool ;
                             rdfs:range xsd:string ;
                             <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2571,7 +2571,7 @@ improvit:hasPeptidePoolName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasPersonID
 improvit:hasPersonID rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf owl:topDataProperty ;
+
                      rdfs:domain improvit:Person ;
                      rdfs:range xsd:string ;
                      <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2583,7 +2583,7 @@ improvit:hasPersonID rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasPharmaceuticalPreparationName
 improvit:hasPharmaceuticalPreparationName rdf:type owl:DatatypeProperty ;
-                                          rdfs:subPropertyOf owl:topDataProperty ;
+
                                           rdfs:domain improvit:PharmaceuticalPreparation ;
                                           rdfs:range xsd:string ;
                                           <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -2595,7 +2595,7 @@ improvit:hasPharmaceuticalPreparationName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasPharmaceuticalPreparationNameLanguage
 improvit:hasPharmaceuticalPreparationNameLanguage rdf:type owl:DatatypeProperty ;
-                                                  rdfs:subPropertyOf owl:topDataProperty ;
+
                                                   rdfs:domain improvit:PharmaceuticalPreparation ;
                                                   rdfs:range xsd:string ;
                                                   <http://purl.org/dc/elements/1.1/date> "2021-01-13T00:00:00"@en ;
@@ -2607,7 +2607,7 @@ improvit:hasPharmaceuticalPreparationNameLanguage rdf:type owl:DatatypeProperty 
 
 ###  http://www.project-improvit.de/vocab/hasPharmaceuticalPreparationProvider
 improvit:hasPharmaceuticalPreparationProvider rdf:type owl:DatatypeProperty ;
-                                              rdfs:subPropertyOf owl:topDataProperty ;
+
                                               rdfs:domain improvit:PharmaceuticalPreparation ;
                                               rdfs:range xsd:string ;
                                               <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -2619,7 +2619,7 @@ improvit:hasPharmaceuticalPreparationProvider rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasProtocolReagentCompanyName
 improvit:hasProtocolReagentCompanyName rdf:type owl:DatatypeProperty ;
-                                       rdfs:subPropertyOf owl:topDataProperty ;
+
                                        rdfs:domain improvit:ProtocolReagent ;
                                        rdfs:range xsd:string ;
                                        <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2631,7 +2631,7 @@ improvit:hasProtocolReagentCompanyName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasProtocolReagentName
 improvit:hasProtocolReagentName rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:ProtocolReagent ;
                                 rdfs:range xsd:string ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2643,7 +2643,7 @@ improvit:hasProtocolReagentName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasReportTimeStampDay
 improvit:hasReportTimeStampDay rdf:type owl:DatatypeProperty ;
-                               rdfs:subPropertyOf owl:topDataProperty ;
+
                                rdfs:domain improvit:Report ;
                                rdfs:range xsd:date ;
                                <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2655,7 +2655,7 @@ improvit:hasReportTimeStampDay rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasReportTimeStampHour
 improvit:hasReportTimeStampHour rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:Report ;
                                 rdfs:range xsd:date ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2667,7 +2667,7 @@ improvit:hasReportTimeStampHour rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasReportTimeStampMin
 improvit:hasReportTimeStampMin rdf:type owl:DatatypeProperty ;
-                               rdfs:subPropertyOf owl:topDataProperty ;
+
                                rdfs:domain improvit:Report ;
                                rdfs:range xsd:date ;
                                <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2679,7 +2679,7 @@ improvit:hasReportTimeStampMin rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasReportTimeStampMonth
 improvit:hasReportTimeStampMonth rdf:type owl:DatatypeProperty ;
-                                 rdfs:subPropertyOf owl:topDataProperty ;
+
                                  rdfs:domain improvit:Report ;
                                  rdfs:range xsd:date ;
                                  <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2691,7 +2691,7 @@ improvit:hasReportTimeStampMonth rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasReportTimeStampSec
 improvit:hasReportTimeStampSec rdf:type owl:DatatypeProperty ;
-                               rdfs:subPropertyOf owl:topDataProperty ;
+
                                rdfs:domain improvit:Report ;
                                rdfs:range xsd:date ;
                                <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2703,7 +2703,7 @@ improvit:hasReportTimeStampSec rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasReportTimeStampYear
 improvit:hasReportTimeStampYear rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:Report ;
                                 rdfs:range xsd:date ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2715,7 +2715,7 @@ improvit:hasReportTimeStampYear rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasResearchGroupID
 improvit:hasResearchGroupID rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf owl:topDataProperty ;
+
                             rdfs:domain improvit:ResearchGroup ;
                             rdfs:range xsd:string ;
                             <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2727,7 +2727,7 @@ improvit:hasResearchGroupID rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasResearchGroupName
 improvit:hasResearchGroupName rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf owl:topDataProperty ;
+
                               rdfs:domain improvit:ResearchGroup ;
                               rdfs:range xsd:string ;
                               <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2739,7 +2739,7 @@ improvit:hasResearchGroupName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasResultsTimeStampDay
 improvit:hasResultsTimeStampDay rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:LeadsToResults ;
                                 rdfs:range xsd:date ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2751,7 +2751,7 @@ improvit:hasResultsTimeStampDay rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasResultsTimeStampHour
 improvit:hasResultsTimeStampHour rdf:type owl:DatatypeProperty ;
-                                 rdfs:subPropertyOf owl:topDataProperty ;
+
                                  rdfs:domain improvit:LeadsToResults ;
                                  rdfs:range xsd:date ;
                                  <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2763,7 +2763,7 @@ improvit:hasResultsTimeStampHour rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasResultsTimeStampMin
 improvit:hasResultsTimeStampMin rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:LeadsToResults ;
                                 rdfs:range xsd:date ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2775,7 +2775,7 @@ improvit:hasResultsTimeStampMin rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasResultsTimeStampMonth
 improvit:hasResultsTimeStampMonth rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf owl:topDataProperty ;
+
                                   rdfs:domain improvit:LeadsToResults ;
                                   rdfs:range xsd:date ;
                                   <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2787,7 +2787,7 @@ improvit:hasResultsTimeStampMonth rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasResultsTimeStampSec
 improvit:hasResultsTimeStampSec rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:LeadsToResults ;
                                 rdfs:range xsd:date ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2799,7 +2799,7 @@ improvit:hasResultsTimeStampSec rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasResultsTimeStampYear
 improvit:hasResultsTimeStampYear rdf:type owl:DatatypeProperty ;
-                                 rdfs:subPropertyOf owl:topDataProperty ;
+
                                  rdfs:domain improvit:LeadsToResults ;
                                  rdfs:range xsd:date ;
                                  <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ,
@@ -2811,7 +2811,7 @@ improvit:hasResultsTimeStampYear rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasSex
 improvit:hasSex rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf owl:topDataProperty ;
+
                 rdfs:domain improvit:Person ;
                 rdfs:range xsd:string ;
                 <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2823,7 +2823,7 @@ improvit:hasSex rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasSpecificHLAProtein
 improvit:hasSpecificHLAProtein rdf:type owl:DatatypeProperty ;
-                               rdfs:subPropertyOf owl:topDataProperty ;
+
                                rdfs:domain improvit:AlleleID ;
                                rdfs:range xsd:string ;
                                <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2835,7 +2835,7 @@ improvit:hasSpecificHLAProtein rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasStudyAim
 improvit:hasStudyAim rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf owl:topDataProperty ;
+
                      rdfs:domain improvit:Study ;
                      rdfs:range xsd:string ;
                      <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2847,7 +2847,7 @@ improvit:hasStudyAim rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasStudyEndDate
 improvit:hasStudyEndDate rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf owl:topDataProperty ;
+
                          rdfs:domain improvit:Study ;
                          rdfs:range xsd:string ;
                          <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2859,7 +2859,7 @@ improvit:hasStudyEndDate rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasStudyFullName
 improvit:hasStudyFullName rdf:type owl:DatatypeProperty ;
-                          rdfs:subPropertyOf owl:topDataProperty ;
+
                           rdfs:domain improvit:Study ;
                           rdfs:range xsd:string ;
                           <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2871,7 +2871,7 @@ improvit:hasStudyFullName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasStudyFullNameLanguage
 improvit:hasStudyFullNameLanguage rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf owl:topDataProperty ;
+
                                   rdfs:domain improvit:Study ;
                                   rdfs:range xsd:string ;
                                   <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
@@ -2883,7 +2883,7 @@ improvit:hasStudyFullNameLanguage rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasStudyID
 improvit:hasStudyID rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf owl:topDataProperty ;
+
                     rdfs:domain improvit:Study ;
                     rdfs:range xsd:string ;
                     <http://purl.org/dc/elements/1.1/date> "2022-04-22T00:00:00"@en ;
@@ -2895,7 +2895,7 @@ improvit:hasStudyID rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasStudyName
 improvit:hasStudyName rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
+
                       rdfs:domain improvit:Study ;
                       rdfs:range xsd:string ;
                       <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
@@ -2907,7 +2907,7 @@ improvit:hasStudyName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasStudyStartDate
 improvit:hasStudyStartDate rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf owl:topDataProperty ;
+
                            rdfs:domain improvit:Study ;
                            rdfs:range xsd:date ;
                            <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
@@ -2919,7 +2919,7 @@ improvit:hasStudyStartDate rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasSubMethodName
 improvit:hasSubMethodName rdf:type owl:DatatypeProperty ;
-                          rdfs:subPropertyOf owl:topDataProperty ;
+
                           rdfs:domain improvit:SubMethod ;
                           rdfs:range xsd:string ;
                           <http://purl.org/dc/elements/1.1/date> "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
@@ -2931,7 +2931,7 @@ improvit:hasSubMethodName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasSubjectKey
 improvit:hasSubjectKey rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf owl:topDataProperty ;
+
                        rdfs:domain improvit:Donor ,
                                    improvit:Visit ;
                        rdfs:range xsd:double ;
@@ -2944,7 +2944,7 @@ improvit:hasSubjectKey rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasSurgeryName
 improvit:hasSurgeryName rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf owl:topDataProperty ;
+
                         rdfs:domain improvit:Surgery ;
                         rdfs:range xsd:string ;
                         <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -2956,7 +2956,7 @@ improvit:hasSurgeryName rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasSurgeryNameLanguage
 improvit:hasSurgeryNameLanguage rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:Surgery ;
                                 rdfs:range xsd:string ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -2968,7 +2968,7 @@ improvit:hasSurgeryNameLanguage rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasSurgeryReportSource
 improvit:hasSurgeryReportSource rdf:type owl:DatatypeProperty ;
-                                rdfs:subPropertyOf owl:topDataProperty ;
+
                                 rdfs:domain improvit:Surgery ;
                                 rdfs:range xsd:string ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -2980,7 +2980,7 @@ improvit:hasSurgeryReportSource rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasSynonymousDNASubstitutionCodingRegion
 improvit:hasSynonymousDNASubstitutionCodingRegion rdf:type owl:DatatypeProperty ;
-                                                  rdfs:subPropertyOf owl:topDataProperty ;
+
                                                   rdfs:domain improvit:AlleleID ;
                                                   rdfs:range xsd:string ;
                                                   <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -2992,7 +2992,7 @@ improvit:hasSynonymousDNASubstitutionCodingRegion rdf:type owl:DatatypeProperty 
 
 ###  http://www.project-improvit.de/vocab/hasTimeOfVaccination
 improvit:hasTimeOfVaccination rdf:type owl:DatatypeProperty ;
-                              rdfs:subPropertyOf owl:topDataProperty ;
+
                               rdfs:domain improvit:Vaccination ;
                               rdfs:range xsd:string ;
                               <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -3004,7 +3004,7 @@ improvit:hasTimeOfVaccination rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasVaccineDose
 improvit:hasVaccineDose rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf owl:topDataProperty ;
+
                         rdfs:domain improvit:Utilize ;
                         rdfs:range xsd:nonNegativeInteger ;
                         <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -3016,7 +3016,7 @@ improvit:hasVaccineDose rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasVaccineDoseUnit
 improvit:hasVaccineDoseUnit rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf owl:topDataProperty ;
+
                             rdfs:domain improvit:Utilize ;
                             rdfs:range xsd:string ;
                             <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -3028,7 +3028,7 @@ improvit:hasVaccineDoseUnit rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasVaccineInformationDate
 improvit:hasVaccineInformationDate rdf:type owl:DatatypeProperty ;
-                                   rdfs:subPropertyOf owl:topDataProperty ;
+
                                    rdfs:domain improvit:Utilize ;
                                    rdfs:range xsd:date ;
                                    <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -3040,7 +3040,7 @@ improvit:hasVaccineInformationDate rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasVaccineInformationSource
 improvit:hasVaccineInformationSource rdf:type owl:DatatypeProperty ;
-                                     rdfs:subPropertyOf owl:topDataProperty ;
+
                                      rdfs:domain improvit:Utilize ;
                                      rdfs:range xsd:string ;
                                      <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
@@ -3052,7 +3052,7 @@ improvit:hasVaccineInformationSource rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasVisitDate
 improvit:hasVisitDate rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
+
                       rdfs:domain improvit:Attend ;
                       rdfs:range xsd:date ;
                       <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
@@ -3064,7 +3064,7 @@ improvit:hasVisitDate rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasVisitDescription
 improvit:hasVisitDescription rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf owl:topDataProperty ;
+
                              rdfs:domain improvit:Visit ;
                              rdfs:range xsd:string ;
                              <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
@@ -3076,7 +3076,7 @@ improvit:hasVisitDescription rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasVisitID
 improvit:hasVisitID rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf owl:topDataProperty ;
+
                     rdfs:domain improvit:Visit ;
                     rdfs:range xsd:string ;
                     <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
@@ -3088,7 +3088,7 @@ improvit:hasVisitID rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasWeight
 improvit:hasWeight rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf owl:topDataProperty ;
+
                    rdfs:domain improvit:Attend ;
                    rdfs:range xsd:nonNegativeInteger ;
                    <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
@@ -3100,7 +3100,7 @@ improvit:hasWeight rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasWeightUnit
 improvit:hasWeightUnit rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf owl:topDataProperty ;
+
                        rdfs:domain improvit:Attend ;
                        rdfs:range xsd:string ;
                        <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
@@ -3112,7 +3112,7 @@ improvit:hasWeightUnit rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/hasdrugConcentarion
 improvit:hasdrugConcentarion rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf owl:topDataProperty ;
+
                              rdfs:domain improvit:MedicalDrug ;
                              rdfs:range xsd:anyURI ;
                              <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
@@ -3124,7 +3124,7 @@ improvit:hasdrugConcentarion rdf:type owl:DatatypeProperty ;
 
 ###  http://www.project-improvit.de/vocab/prescriptionOfMedicalDrug
 improvit:prescriptionOfMedicalDrug rdf:type owl:DatatypeProperty ;
-                                   rdfs:subPropertyOf owl:topDataProperty ;
+
                                    rdfs:domain improvit:Prescribe ;
                                    rdfs:range xsd:anyURI ;
                                    <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
