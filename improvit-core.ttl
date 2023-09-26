@@ -3,6 +3,12 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <https://semanticscience.org/resource> .
+@prefix mrel: <https://id.loc.gov/vocabulary/relators> .
+@prefix sbeo: <https://qasimkhalid.github.io/SBEO/#> .
+@prefix cco: <https://smiy.sourceforge.net/cco/spec/cognitivecharacteristics.html#> .
+@prefix obo: <https://ontobee.org/ontology/PATO?iri=http://purl.obolibrary.org/obo> .
+@prefix frapo: <https://sparontologies.github.io/frapo/current/> .
 @prefix improvit: <http://www.project-improvit.de/vocab/> .
 
 <https://github.com/tibonto/ImProvit/blob/master/improvit-core.ttl> rdf:type owl:Ontology.
@@ -4175,5 +4181,109 @@ improvit:Visit rdf:type owl:Class ;
                rdfs:label "Visit"@en ;
                owl:versionInfo "v1.0"@en .
 
+
+###  http://www.project-improvit.de/vocab/Visit
+improvit:Visit rdf:type owl:Class ;
+              <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
+              rdfs:comment "This class represents the concept of different time points for study-specific events."@en ;
+              rdfs:isDefinedBy "Shehneela, Janyn, Hanan, Annett, Shahi."@en ;
+              rdfs:label "Visit"@en ;
+              owl:versionInfo "v1.0"@en .
+
+sio:extPerson rdf:type owl:Class ;
+             <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
+             rdfs:comment "This class represents a person (i.e. exPerson) from external Ontology called SIO."@en ;
+             rdfs:isDefinedBy " Shahi."@en ;
+             rdfs:label "extPerson"@en ;
+             owl:versionInfo "v1.0"@en .
+
+mrel:extDonor rdf:type owl:Class ;
+             <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
+             rdfs:comment "This class represents a donor class from external Ontology called mrel."@en ;
+             rdfs:isDefinedBy " Shahi."@en ;
+             rdfs:label "extDonor"@en ;
+             owl:versionInfo "v1.0"@en .
+
+sbeo:extVisit rdf:type owl:Class ;
+             <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
+             rdfs:comment "This class represents external class visit from external Ontology called sbeo."@en ;
+             rdfs:isDefinedBy " Shahi."@en ;
+             rdfs:label "extVisit"@en ;
+             owl:versionInfo "v1.0"@en .
+
+sio:extBiosample rdf:type owl:Class ;
+             <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
+             rdfs:comment "This class represents external class Biosample from external Ontology called sio."@en ;
+             rdfs:isDefinedBy " Shahi."@en ;
+             rdfs:label "extBiosample"@en ;
+             owl:versionInfo "v1.0"@en .
+
+
+frapo:extDonate rdf:type owl:Class ;
+             <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
+             rdfs:comment "This class represents external class Donate from external Ontology called frapo."@en ;
+             rdfs:isDefinedBy " Shahi."@en ;
+             rdfs:label "extDonate"@en ;
+             owl:versionInfo "v1.0"@en .
+
+owl:equivalentClass rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain improvit:Person ;
+             rdfs:range sio:extPerson ;
+             <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
+             rdfs:comment "This object property shows the association of improvit:person to external ontology person (extPerson) in sio."@en ;
+             rdfs:isDefinedBy "Shahi."@en ;
+             rdfs:label "equivalentClass"@en ;
+             owl:versionInfo "v1.0"@en .
+
+owl:equivalentClass rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain improvit:Donor ;
+             rdfs:range mrel:extDonor ;
+             <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
+             rdfs:comment "This object property shows the association of improvit:donor to external donor in mrel ontology."@en ;
+             rdfs:isDefinedBy "Shahi."@en ;
+             rdfs:label "equivalentClass"@en ;
+             owl:versionInfo "v1.0"@en .
+
+owl:equivalentClass rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain improvit:Visit ;
+             rdfs:range sbeo:extVisit ;
+             <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
+             rdfs:comment "This object property shows the association of improvit:Visit to external Visit in sbeo ontology."@en ;
+             rdfs:isDefinedBy "Shahi."@en ;
+             rdfs:label "equivalentClass"@en ;
+             owl:versionInfo "v1.0"@en .
+
+owl:equivalentClass rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain improvit:Biosample ;
+             rdfs:range sio:extBiosample ;
+             <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
+             rdfs:comment "This object property shows the association of improvit:Biosample to external Biosample concept in sio ontology."@en ;
+             rdfs:isDefinedBy "Shahi."@en ;
+             rdfs:label "equivalentClass"@en ;
+             owl:versionInfo "v1.0"@en .
+
+owl:equivalentClass rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain improvit:Biosample ;
+             rdfs:range sio:extBiosample ;
+             <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
+             rdfs:comment "This object property shows the association of improvit:Biosample to external Biosample concept in sio ontology."@en ;
+             rdfs:isDefinedBy "Shahi."@en ;
+             rdfs:label "equivalentClass"@en ;
+             owl:versionInfo "v1.0"@en .
+
+owl:equivalentClass rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain improvit:Donate ;
+             rdfs:range frapo:extDonate ;
+             <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
+             rdfs:comment "This object property shows the association of improvit:Biosample to external Biosample concept in sio ontology."@en ;
+             rdfs:isDefinedBy "Shahi."@en ;
+             rdfs:label "equivalentClass"@en ;
+             owl:versionInfo "v1.0"@en .
 
 ###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
