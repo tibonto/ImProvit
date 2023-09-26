@@ -1088,5 +1088,1009 @@ improvit:Visit rdf:type owl:Class ;
                owl:versionInfo "v1.0"@en .
 
 
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.project-improvit.de/vocab/DonorSufferRelation
+improvit:DonorSufferRelation rdf:type owl:ObjectProperty ;
+
+                            rdfs:domain improvit:Donor ;
+                            rdfs:range improvit:SufferClass ;
+                            rdfs:label "DonorSufferRelation"@en .
+
+
+###  http://www.project-improvit.de/vocab/HLAGeneConsistOf
+improvit:HLAGeneConsistOf rdf:type owl:ObjectProperty ;
+
+                         rdfs:domain improvit:HLAGene ;
+                         rdfs:range improvit:ConsistOf ;
+                         <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                         rdfs:comment "This property shows the association of the HLAGene to consistOf."@en ;
+                         rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                         rdfs:label "HLAGeneConsistOf"@en ;
+                         owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/adopt
+improvit:adopt rdf:type owl:ObjectProperty ;
+
+              rdfs:domain improvit:Donor ;
+              rdfs:range improvit:Habit ;
+              <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
+              rdfs:comment "This property shows the association of Donor to Habit classes."@en ;
+              rdfs:isDefinedBy "Shahi"@en ;
+              rdfs:label "adopt"@en ;
+              owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/apply
+improvit:apply rdf:type owl:ObjectProperty ;
+
+              rdfs:domain improvit:Method ;
+              rdfs:range improvit:ExperimentalProtocol ;
+              <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+              rdfs:comment "This property shows the association of method to experimentalProtocol."@en ;
+              rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+              rdfs:label "apply"@en ;
+              owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/attendVisit
+improvit:attendVisit rdf:type owl:ObjectProperty ;
+
+                    rdfs:domain improvit:Visit ;
+                    rdfs:range improvit:Attend ;
+                    <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                    rdfs:comment "This property shows the association of visit to attend."@en ;
+                    rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+                    rdfs:label "attendVisit"@en ;
+                    owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/binds
+improvit:binds rdf:type owl:ObjectProperty ;
+
+              rdfs:domain improvit:Antibody ;
+              rdfs:range improvit:Molecule ;
+              <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+              rdfs:comment "This property shows the association of antibody to molecule."@en ;
+              rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+              rdfs:label "binds"@en ;
+              owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/biosampleDonatedBy
+improvit:biosampleDonatedBy rdf:type owl:ObjectProperty ;
+
+                           rdfs:domain improvit:Biosample ;
+                           rdfs:range improvit:Donate ;
+                           <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                           rdfs:comment "This property shows the association of biosample to donate."@en ;
+                           rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                           rdfs:label "biosampleDonatedBy"@en ;
+                           owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/cause
+improvit:cause rdf:type owl:ObjectProperty ;
+
+              rdfs:domain improvit:InfectiousAgent ;
+              rdfs:range improvit:InfectiousDisease ;
+              <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+              rdfs:comment "This property shows the association of an infectiousAgent to infectiousDisease."@en ;
+              rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+              rdfs:label "cause"@en ;
+              owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/conductedBy
+improvit:conductedBy rdf:type owl:ObjectProperty ;
+
+                    rdfs:domain improvit:Study ;
+                    rdfs:range improvit:Conduct ;
+                    <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                    rdfs:comment "This property shows the association of study to conduct."@en ;
+                    rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+                    rdfs:label "conductedBy"@en ;
+                    owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/conductingPersonPerformeSampleExtraction
+improvit:conductingPersonPerformeSampleExtraction rdf:type owl:ObjectProperty ;
+
+                                                 rdfs:domain improvit:ConductorPerson ;
+                                                 rdfs:range improvit:ExtractSample ;
+                                                 <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                                                 rdfs:comment "This property shows the association of conductor person to extract sample."@en ;
+                                                 rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+                                                 rdfs:label "conductingPersonPerformeSampleExtraction"@en ;
+                                                 owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/conductorInstitute
+improvit:conductorInstitute rdf:type owl:ObjectProperty ;
+
+                           rdfs:domain improvit:Institute ;
+                           rdfs:range improvit:Conduct ;
+                           <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                           rdfs:comment "This property shows the association of institute to conduct."@en ;
+                           rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+                           rdfs:label "conductorInstitute"@en ;
+                           owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/conductorResearchGroup
+improvit:conductorResearchGroup rdf:type owl:ObjectProperty ;
+
+                               rdfs:domain improvit:ResearchGroup ;
+                               rdfs:range improvit:Conduct ;
+                               <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                               rdfs:comment "This property shows the association of  research group to conduct."@en ;
+                               rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+                               rdfs:label "conductorResearchGroup"@en ;
+                               owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/contain
+improvit:contain rdf:type owl:ObjectProperty ;
+
+                rdfs:domain improvit:FluorochromeConjugatedAntibody ;
+                rdfs:range improvit:Antibody ;
+                <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                rdfs:comment "This property shows the association of fluorochromeConjugatedAntibody to antibody."@en ;
+                rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi,Annett."@en ;
+                rdfs:label "contain"@en ;
+                owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/definesForParameter
+improvit:definesForParameter rdf:type owl:ObjectProperty ;
+
+                            rdfs:domain improvit:Define ;
+                            rdfs:range improvit:Parameter ;
+                            <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
+                            rdfs:comment "This property shows the association of define to parameter class."@en ;
+                            rdfs:isDefinedBy "Shahi"@en ;
+                            rdfs:label "definesForParameter"@en ;
+                            owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/describedBy
+improvit:describedBy rdf:type owl:ObjectProperty ;
+
+                    rdfs:domain improvit:SubMethod ;
+                    rdfs:range improvit:Method ;
+                    <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                    rdfs:comment "This property shows the association of subMethod to method."@en ;
+                    rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                    rdfs:label "describedBy"@en ;
+                    owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/disjoinwith
+improvit:disjoinwith rdf:type owl:ObjectProperty ;
+                    rdfs:label "disjoinwith"@en .
+
+
+###  http://www.project-improvit.de/vocab/donateOrgan
+improvit:donateOrgan rdf:type owl:ObjectProperty ;
+
+                    rdfs:domain improvit:OrganDonor ;
+                    rdfs:range improvit:Organ ;
+                    <http://purl.org/dc/elements/1.1/date> "2023-01-13T00:00:00"^^xsd:dateTime ;
+                    rdfs:comment "needs to verifty with experts."^^xsd:string ;
+                    rdfs:isDefinedBy "Shahi"^^xsd:string ;
+                    rdfs:label "donateOrgan"@en ;
+                    owl:versionInfo "v1.0"^^xsd:string .
+
+
+###  http://www.project-improvit.de/vocab/donatesBiosample
+improvit:donatesBiosample rdf:type owl:ObjectProperty ;
+
+                         rdfs:domain improvit:Donate ;
+                         rdfs:range improvit:Biosample ;
+                         <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"^^xsd:dateTime ;
+                         rdfs:comment "This property shows the association of biosample to donate."^^xsd:string ;
+                         rdfs:isDefinedBy "Shahi"^^xsd:string ;
+                         rdfs:label "donatesBiosample"@en ;
+                         owl:versionInfo "v1.0"^^xsd:string .
+
+
+###  http://www.project-improvit.de/vocab/donatingDonor
+improvit:donatingDonor rdf:type owl:ObjectProperty ;
+
+                      rdfs:domain improvit:Donor ;
+                      rdfs:range improvit:Donate ;
+                      <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                      rdfs:comment "This property shows the association of donor to donate."@en ;
+                      rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                      rdfs:label "donatingDonor"@en ;
+                      owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/expDesignBasedOnExpSample
+improvit:expDesignBasedOnExpSample rdf:type owl:ObjectProperty ;
+
+                                  rdfs:domain improvit:ExperimentalSample ;
+                                  rdfs:range improvit:BasedOnExperimentalDesign ;
+                                  <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                  rdfs:comment "This property shows the association of experimentalSample to basedOnExperimentalDesing class."@en ;
+                                  rdfs:isDefinedBy "Shahi"@en ;
+                                  rdfs:label "expDesignBasedOnExpSample"@en ;
+                                  owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/expObservationBasedOnExpDesign
+improvit:expObservationBasedOnExpDesign rdf:type owl:ObjectProperty ;
+
+                                       rdfs:domain improvit:ExperimentalObservation ;
+                                       <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                       rdfs:comment "This property shows the association of experimentalObservation to  basedOnExperimentalDesign."@en ;
+                                       rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                       rdfs:label "expObservationBasedOnExpDesign"@en ;
+                                       owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/expObservationLeadsToResults
+improvit:expObservationLeadsToResults rdf:type owl:ObjectProperty ;
+
+                                     rdfs:domain improvit:ExperimentalObservation ;
+                                     rdfs:range improvit:LeadsToResults ;
+                                     <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                     rdfs:comment "This property shows the association of the experimentalObservation to leadsToResults."@en ;
+                                     rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                     rdfs:label "expObservationLeadsToResults"@en ;
+                                     owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/expProtocolUseBySampleExtraction
+improvit:expProtocolUseBySampleExtraction rdf:type owl:ObjectProperty ;
+
+                                         rdfs:domain improvit:ExperimentalProtocol ;
+                                         rdfs:range improvit:ExtractSample ;
+                                         <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                         rdfs:comment "This property shows the association of experimentalProtocol  to extractSample."@en ;
+                                         rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                         rdfs:label "expProtocolUseBySampleExtraction"@en ;
+                                         owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/expProtocolUtilizeMaterials
+improvit:expProtocolUtilizeMaterials rdf:type owl:ObjectProperty ;
+
+                                    rdfs:domain improvit:ExperimentalProtocol ;
+                                    rdfs:range improvit:UtilizeMaterials ;
+                                    <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                    rdfs:comment "This property shows the association of the experimentalProtocol to utilizeMaterials."@en ;
+                                    rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                    rdfs:label "expProtocolUtilizeMaterials"@en ;
+                                    owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/expSampleBaseOnExpDesign
+improvit:expSampleBaseOnExpDesign rdf:type owl:ObjectProperty ;
+
+                                 rdfs:domain improvit:ExperimentalSample ;
+                                 <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                 rdfs:comment "This property shows the association of  experimentalSample to basedOnExperimentalDesign."@en ;
+                                 rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                 rdfs:label "expSampleBaseOnExpDesign"@en ;
+                                 owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/expSampleBasedOnExpDesign
+improvit:expSampleBasedOnExpDesign rdf:type owl:ObjectProperty ;
+
+                                  rdfs:domain improvit:ExperimentalSample ;
+                                  rdfs:range improvit:BasedOnExperimentalDesign ;
+                                  <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                                  rdfs:comment "This property shows the association of experimental sample to based on experimental design."@en ;
+                                  rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+                                  rdfs:label "expSampleBasedOnExpDesign"@en ;
+                                  owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/expSampleExtraction
+improvit:expSampleExtraction rdf:type owl:ObjectProperty ;
+
+                            rdfs:domain improvit:ExperimentalSample ;
+                            rdfs:range improvit:ExtractSample ;
+                            <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                            rdfs:comment "This property shows the association of experimentalSample to extractSample."@en ;
+                            rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                            rdfs:label "expSampleExtraction"@en ;
+                            owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/experimentBaseOnExpDesign
+improvit:experimentBaseOnExpDesign rdf:type owl:ObjectProperty ;
+
+                                  rdfs:domain improvit:Experiment ;
+                                  <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                  rdfs:comment "This property shows the association of experiment to basedonExperimentalDesign."@en ;
+                                  rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                  rdfs:label "experimentBaseOnExpDesign"@en ;
+                                  owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/experimentBasedOnExpDesign
+improvit:experimentBasedOnExpDesign rdf:type owl:ObjectProperty ;
+
+                                   rdfs:domain improvit:Experiment ;
+                                   rdfs:range improvit:BasedOnExperimentalDesign ;
+                                   <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                                   rdfs:comment "This property shows the association of experiment to based on experimental design."@en ;
+                                   rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+                                   rdfs:label "experimentBasedOnExpDesign"@en ;
+                                   owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/experimentalObservationProvideInformationAbout
+improvit:experimentalObservationProvideInformationAbout rdf:type owl:ObjectProperty ;
+
+                                                       rdfs:domain improvit:ExperimentalObservation ;
+                                                       rdfs:range improvit:InformationAbout ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                                       rdfs:comment "This property shows the association of experimentalObservation to informationAbout."@en ;
+                                                       rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                                       rdfs:label "experimentalObservationProvideInformationAbout"@en ;
+                                                       owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/experimentalProtocolBaseOnExpDesign
+improvit:experimentalProtocolBaseOnExpDesign rdf:type owl:ObjectProperty ;
+
+                                            rdfs:domain improvit:ExperimentalProtocol ;
+                                            <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                            rdfs:comment "This property shows the association of experimentalProtocol to basedOnExperimentalDesign."@en ;
+                                            rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                            rdfs:label "experimentalProtocolBaseOnExpDesign"@en ;
+                                            owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/experimentalProtocolBasedOnExpDesign
+improvit:experimentalProtocolBasedOnExpDesign rdf:type owl:ObjectProperty ;
+
+                                             rdfs:domain improvit:ExperimentalProtocol ;
+                                             rdfs:range improvit:BasedOnExperimentalDesign ;
+                                             <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                                             rdfs:comment "This property shows the association of experimental protocol to based on experimental design."@en ;
+                                             rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+                                             rdfs:label "experimentalProtocolBasedOnExpDesign"@en ;
+                                             owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/extractingExpSample
+improvit:extractingExpSample rdf:type owl:ObjectProperty ;
+
+                            rdfs:domain improvit:Biosample ;
+                            rdfs:range improvit:ExtractSample ;
+                            <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                            rdfs:comment "This property shows the association of biosample to extractSample."@en ;
+                            rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                            rdfs:label "extractingExpSample"@en ;
+                            owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/extractionFromBiosample
+improvit:extractionFromBiosample rdf:type owl:ObjectProperty ;
+
+                                rdfs:domain improvit:Biosample ;
+                                rdfs:range improvit:ExtractSample ;
+                                <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
+                                rdfs:comment "This property shows the association of biosample to extractSample class."@en ;
+                                rdfs:isDefinedBy "Shahi"@en ;
+                                rdfs:label "extractionFromBiosample"@en ;
+                                owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hLAAlleleConsistOf
+improvit:hLAAlleleConsistOf rdf:type owl:ObjectProperty ;
+
+                           rdfs:domain improvit:HLAAllele ;
+                           rdfs:range improvit:ConsistOf ;
+                           <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                           rdfs:comment "This property shows the association of the HLAAllele to consistOf."@en ;
+                           rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                           rdfs:label "hLAAlleleConsistOf"@en ;
+                           owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hLAClassIIPresents
+improvit:hLAClassIIPresents rdf:type owl:ObjectProperty ;
+
+                           rdfs:domain improvit:HLAClassII ;
+                           rdfs:range improvit:Peptide ;
+                           <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                           rdfs:comment "This property shows the association of the HLAClassII to peptide."@en ;
+                           rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                           rdfs:label "hLAClassIIPresents"@en ;
+                           owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hLAClassIPresents
+improvit:hLAClassIPresents rdf:type owl:ObjectProperty ;
+
+                          rdfs:domain improvit:HLAClassI ;
+                          rdfs:range improvit:Peptide ;
+                          <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                          rdfs:comment "This property shows the association of the HLAClassI to peptide."@en ;
+                          rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                          rdfs:label "hLAClassIPresents"@en ;
+                          owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hLATypingConsistOf
+improvit:hLATypingConsistOf rdf:type owl:ObjectProperty ;
+
+                           rdfs:domain improvit:HLATypingAnanlysisParameter ;
+                           rdfs:range improvit:ConsistOf ;
+                           <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                           rdfs:comment "This property shows the association of the HLATypingAnanlysisParameter to consistOf."@en ;
+                           rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                           rdfs:label "hLATypingConsistOf"@en ;
+                           owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hasAlleleID
+improvit:hasAlleleID rdf:type owl:ObjectProperty ;
+
+                    rdfs:domain improvit:HLAAllele ;
+                    rdfs:range improvit:AlleleID ;
+                    <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                    rdfs:comment "This property shows the association of the HLAAllele to alleleID."@en ;
+                    rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                    rdfs:label "hasAlleleID"@en ;
+                    owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hasAminoAcidSequenceOfStimulationAgent
+improvit:hasAminoAcidSequenceOfStimulationAgent rdf:type owl:ObjectProperty ;
+
+                                               rdfs:domain improvit:ProtocolStimulationAgent ;
+                                               rdfs:range improvit:AminoAcidSequence ;
+                                               <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                               rdfs:comment "This property shows the association of the protocolStimulationAgent to the aminoAcidSequence."@en ;
+                                               rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                               rdfs:label "hasAminoAcidSequenceOfStimulationAgent"@en ;
+                                               owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hasBufferComponent
+improvit:hasBufferComponent rdf:type owl:ObjectProperty ;
+
+                           rdfs:domain improvit:ProtocolBuffer ;
+                           rdfs:range improvit:BufferComponent ;
+                           <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                           rdfs:comment "This property shows the association of protocolBuffer to bufferComponent."@en ;
+                           rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                           rdfs:label "hasBufferComponent"@en ;
+                           owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hasClinicalDecision
+improvit:hasClinicalDecision rdf:type owl:ObjectProperty ;
+                            rdfs:domain improvit:Measurement ;
+                            rdfs:range improvit:MeasurementDescription ;
+                            rdfs:label "hasClinicalDecision"@en .
+
+
+###  http://www.project-improvit.de/vocab/hasEducation
+improvit:hasEducation rdf:type owl:ObjectProperty ;
+
+                     rdfs:domain improvit:Donor ;
+                     rdfs:range improvit:Education ;
+                     <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                     rdfs:comment "This property shows the association of donor to education."@en ;
+                     rdfs:isDefinedBy "Shehneela, Hanan, Shahi, Janyn, Annett"@en ;
+                     rdfs:label "hasEducation"@en ;
+                     owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hasHabit
+improvit:hasHabit rdf:type owl:ObjectProperty ;
+
+                 rdfs:domain improvit:Donor ;
+                 rdfs:range improvit:Habit ;
+                 <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                 rdfs:comment "This property shows the association of donor to habit."@en ;
+                 rdfs:isDefinedBy "Janyn,Hanan, Shehneela, Shahi,Annett."@en ;
+                 rdfs:label "hasHabit"@en ;
+                 owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hasInterventionType
+improvit:hasInterventionType rdf:type owl:ObjectProperty ;
+
+                            rdfs:domain improvit:Intervention ;
+                            rdfs:range improvit:InterventionType ;
+                            <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
+                            rdfs:comment "This property shows the association of intervention to interventionType."@en ;
+                            rdfs:isDefinedBy "Shehneela, Hanan, Shahi, Janyn, Annett"@en ;
+                            rdfs:label "hasInterventionType"@en ;
+                            owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hasMediumComponent
+improvit:hasMediumComponent rdf:type owl:ObjectProperty ;
+
+                           rdfs:domain improvit:ProtocolMedium ;
+                           rdfs:range improvit:MediumComponent ;
+                           <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                           rdfs:comment "This property shows the association of protocolBuffer to mediumComponent."@en ;
+                           rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi,Annett."@en ;
+                           rdfs:label "hasMediumComponent"@en ;
+                           owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hasParameterType
+improvit:hasParameterType rdf:type owl:ObjectProperty ;
+
+                         rdfs:domain improvit:Parameter ;
+                         rdfs:range improvit:ParameterType ;
+                         <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                         rdfs:comment "This property shows the association of parameter to parameterType."@en ;
+                         rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                         rdfs:label "hasParameterType"@en ;
+                         owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hasPeptideNumberOfStimulationAgent
+improvit:hasPeptideNumberOfStimulationAgent rdf:type owl:ObjectProperty ;
+
+                                           rdfs:domain improvit:ProtocolStimulationAgent ;
+                                           rdfs:range improvit:PeptideNumber ;
+                                           <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                           rdfs:comment "This property shows the association of protocolStimulationAgent to peptideNumber."@en ;
+                                           rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                           rdfs:label "hasPeptideNumberOfStimulationAgent"@en ;
+                                           owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hasPeptidePoolOfStimulationAgent
+improvit:hasPeptidePoolOfStimulationAgent rdf:type owl:ObjectProperty ;
+
+                                         rdfs:domain improvit:ProtocolStimulationAgent ;
+                                         rdfs:range improvit:PeptidePool ;
+                                         <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                         rdfs:comment "This property shows the association of protocolStimulationAgent to peptidepool."@en ;
+                                         rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                         rdfs:label "hasPeptidePoolOfStimulationAgent"@en ;
+                                         owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hasPersonAge
+improvit:hasPersonAge rdf:type owl:ObjectProperty ;
+
+                     rdfs:domain improvit:Person ;
+                     <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
+                     rdfs:comment "This property shows the association of person to personAge."@en ;
+                     rdfs:isDefinedBy "Shehneela, Janyn, Hanan, Annett, Shahi."@en ;
+                     rdfs:label "hasPersonAge"@en ;
+                     owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hasSubMethod
+improvit:hasSubMethod rdf:type owl:ObjectProperty ;
+
+                     rdfs:domain improvit:Method ;
+                     rdfs:range improvit:SubMethod ;
+                     <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                     rdfs:comment "This property shows the association of method to subMethod."@en ;
+                     rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                     rdfs:label "hasSubMethod"@en ;
+                     owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/hasVisit
+improvit:hasVisit rdf:type owl:ObjectProperty ;
+
+                 rdfs:domain improvit:Donor ;
+                 rdfs:range improvit:Attend ;
+                 <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                 rdfs:comment "This property shows the association of donor to attend."@en ;
+                 rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+                 rdfs:label "hasVisit"@en ;
+                 owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/immuneResponseReport
+improvit:immuneResponseReport rdf:type owl:ObjectProperty ;
+
+                             rdfs:domain improvit:ImmuneResponse ;
+                             rdfs:range improvit:Report ;
+                             <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                             rdfs:comment "This property shows the association of immuneResponse to report."@en ;
+                             rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                             rdfs:label "immuneResponseReport"@en ;
+                             owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/include
+improvit:include rdf:type owl:ObjectProperty ;
+
+                rdfs:domain improvit:Vaccine ;
+                rdfs:range improvit:Antigen ;
+                <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
+                rdfs:comment "This property shows the association of vaccine to antigen."@en ;
+                rdfs:isDefinedBy "Shehneela, Hanan, Shahi, Janyn, Annett."@en ;
+                rdfs:label "include"@en ;
+                owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/infects
+improvit:infects rdf:type owl:ObjectProperty ;
+
+                rdfs:domain improvit:Virus ;
+                rdfs:range improvit:Organ ;
+                <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                rdfs:comment "This property shows the association of virus to organ it infects."@en ;
+                rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+                rdfs:label "infects"@en ;
+                owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/informationAboutBiologicalImmunologicalProcess
+improvit:informationAboutBiologicalImmunologicalProcess rdf:type owl:ObjectProperty ;
+
+                                                       rdfs:domain improvit:BiologicalImmunologicalProcess ;
+                                                       rdfs:range improvit:InformationAbout ;
+                                                       <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                                       rdfs:comment "This property shows the association of biologicalImmunologicalProcess to  informationAbout."@en ;
+                                                       rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                                       rdfs:label "informationAboutBiologicalImmunologicalProcess"@en ;
+                                                       owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/interactWith
+improvit:interactWith rdf:type owl:ObjectProperty ;
+
+                     rdfs:domain improvit:BiologicalImmunologicalProcess ;
+                     rdfs:range improvit:BiologicalComponent ;
+                     <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                     rdfs:comment "This property shows the association of the biologicalImmunologicalProcess to the biologicalComponent."@en ;
+                     rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                     rdfs:label "interactWith"@en ;
+                     owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/isPartOf
+improvit:isPartOf rdf:type owl:ObjectProperty ;
+
+                 rdfs:domain improvit:ResearchGroup ;
+                 rdfs:range improvit:Institute ;
+                 <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                 rdfs:comment "This property shows the association of research group to intitute."@en ;
+                 rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+                 rdfs:label "isPartOf"@en ;
+                 owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/measurementLeadsToResults
+improvit:measurementLeadsToResults rdf:type owl:ObjectProperty ;
+
+                                  rdfs:domain improvit:Measurement ;
+                                  rdfs:range improvit:LeadsToResults ;
+                                  <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
+                                  rdfs:comment "This property shows the association of measurement. to leadsToResults."@en ;
+                                  rdfs:isDefinedBy "Shahi"@en ;
+                                  rdfs:label "measurementLeadsToResults"@en ;
+                                  owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/measurementReflectFunctionalCure
+improvit:measurementReflectFunctionalCure rdf:type owl:ObjectProperty ;
+                                         rdfs:domain improvit:MeasurementDescription ;
+                                         rdfs:range improvit:Reflect ;
+                                         rdfs:label "measurementReflectFunctionalCure"@en .
+
+
+###  http://www.project-improvit.de/vocab/measurementReport
+improvit:measurementReport rdf:type owl:ObjectProperty ;
+
+                          rdfs:domain improvit:Measurement ;
+                          rdfs:range improvit:Report ;
+                          <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                          rdfs:comment "This property shows the association of the measurement to report."@en ;
+                          rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                          rdfs:label "measurementReport"@en ;
+                          owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/medicalDrugPrescription
+improvit:medicalDrugPrescription rdf:type owl:ObjectProperty ;
+
+                                rdfs:domain improvit:MedicalDrug ;
+                                rdfs:range improvit:Prescribe ;
+                                <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
+                                rdfs:comment "This property shows the association of medicalDrug to prescribe."@en ;
+                                rdfs:isDefinedBy "Shehneela, Janyn, Hanan, Annett, Shahi."@en ;
+                                rdfs:label "medicalDrugPrescription"@en ;
+                                owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/parameterDefineByExperimentalProtocol
+improvit:parameterDefineByExperimentalProtocol rdf:type owl:ObjectProperty ;
+
+                                              rdfs:domain improvit:ExperimentalProtocol ;
+                                              rdfs:range improvit:Define ;
+                                              <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                              rdfs:comment "This property shows the association of experimentalProtocol to define."@en ;
+                                              rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                              rdfs:label "parameterDefineByExperimentalProtocol"@en ;
+                                              owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/parameterDefines
+improvit:parameterDefines rdf:type owl:ObjectProperty ;
+
+                         rdfs:domain improvit:Parameter ;
+                         rdfs:range improvit:Define ;
+                         <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                         rdfs:comment "This property shows the association of parameter to define."@en ;
+                         rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                         rdfs:label "parameterDefines"@en ;
+                         owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/parameterLeadsToResults
+improvit:parameterLeadsToResults rdf:type owl:ObjectProperty ;
+
+                                rdfs:domain improvit:Parameter ;
+                                rdfs:range improvit:LeadsToResults ;
+                                <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                rdfs:comment "This property shows the association of parameter to leadsToResults."@en ;
+                                rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                rdfs:label "parameterLeadsToResults"@en ;
+                                owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/participate
+improvit:participate rdf:type owl:ObjectProperty ;
+
+                    rdfs:domain improvit:Donor ;
+                    rdfs:range improvit:Study ;
+                    <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                    rdfs:comment "This property shows the association of donor to study."@en ;
+                    rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+                    rdfs:label "participate"@en ;
+                    owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/posses
+improvit:posses rdf:type owl:ObjectProperty ;
+
+               rdfs:domain improvit:InfectiousAgent ;
+               rdfs:range improvit:Antigen ;
+               <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
+               rdfs:comment "This property shows the association of infectiousAgent to antigen."@en ;
+               rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+               rdfs:label "possess"@en ;
+               owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/prescribtionOfMedicalDrug
+improvit:prescribtionOfMedicalDrug rdf:type owl:ObjectProperty ;
+
+                                  rdfs:domain improvit:Prescribe ;
+                                  rdfs:range improvit:MedicalDrug ;
+                                  <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
+                                  rdfs:comment "This property shows the association of Prescribe to Medicaldrug class."@en ;
+                                  rdfs:isDefinedBy "Shahi"@en ;
+                                  rdfs:label "prescribtionOfMedicalDrug"@en ;
+                                  owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/prescriptionForDisorder
+improvit:prescriptionForDisorder rdf:type owl:ObjectProperty ;
+
+                                rdfs:domain improvit:Disorder ;
+                                rdfs:range improvit:Prescribe ;
+                                <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
+                                rdfs:comment "This property shows the association of disorder to prescribe."@en ;
+                                rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                rdfs:label "prescriptionForDisorder"@en ;
+                                owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/presentedPeptide
+improvit:presentedPeptide rdf:type owl:ObjectProperty ;
+
+                         rdfs:domain improvit:Cell ;
+                         rdfs:range improvit:Peptide ;
+                         <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                         rdfs:comment "This property shows the association of cell to peptide."@en ;
+                         rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                         rdfs:label "presentedPeptide"@en ;
+                         owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/protocolBufferUtilizeMaterial
+improvit:protocolBufferUtilizeMaterial rdf:type owl:ObjectProperty ;
+
+                                      rdfs:domain improvit:ProtocolBuffer ;
+                                      rdfs:range improvit:UtilizeMaterials ;
+                                      <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                      rdfs:comment "This property shows the association of the protocolBuffer to utilizeMaterials."@en ;
+                                      rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                      rdfs:label "protocolBufferUtilizeMaterial"@en ;
+                                      owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/protocolMediumUtilizeMaterial
+improvit:protocolMediumUtilizeMaterial rdf:type owl:ObjectProperty ;
+
+                                      rdfs:domain improvit:ProtocolMedium ;
+                                      rdfs:range improvit:UtilizeMaterials ;
+                                      <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                      rdfs:comment "This property shows the association of the protocolMedium to utilizeMaterials."@en ;
+                                      rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                      rdfs:label "protocolMediumUtilizeMaterial"@en ;
+                                      owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/protocolReagentUtilizeMaterial
+improvit:protocolReagentUtilizeMaterial rdf:type owl:ObjectProperty ;
+
+                                       rdfs:domain improvit:ProtocolReagent ;
+                                       rdfs:range improvit:UtilizeMaterials ;
+                                       <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
+                                       rdfs:comment "This property shows the association of the protocolReagent to utilizeMaterials."@en ;
+                                       rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                                       rdfs:label "protocolReagentUtilizeMaterial"@en ;
+                                       owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/receive
+improvit:receive rdf:type owl:ObjectProperty ;
+
+                rdfs:domain improvit:Donor ;
+                rdfs:range improvit:Intervention ;
+                <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
+                rdfs:comment "This property shows the association of donor to intervention."@en ;
+                rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                rdfs:label "receive"@en ;
+                owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/reflectFunctionalCure
+improvit:reflectFunctionalCure rdf:type owl:ObjectProperty ;
+                              rdfs:domain improvit:Reflect ;
+                              rdfs:range improvit:FunctionalCure ;
+                              rdfs:label "reflectFunctionalCure"@en .
+
+
+###  http://www.project-improvit.de/vocab/replace
+improvit:replace rdf:type owl:ObjectProperty ;
+
+                rdfs:domain improvit:TransplantSurgery ;
+                rdfs:range improvit:Organ ;
+                <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
+                rdfs:comment "This property shows the association of transplantSurgery to organ."@en ;
+                rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
+                rdfs:label "replace"@en ;
+                owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/sampleExtractionForExperimentalSample
+improvit:sampleExtractionForExperimentalSample rdf:type owl:ObjectProperty ;
+
+                                              rdfs:domain improvit:ExtractSample ;
+                                              rdfs:range improvit:ExperimentalSample ;
+                                              <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
+                                              rdfs:comment "This property shows the association of extractSample to experimentalSample."@en ;
+                                              rdfs:isDefinedBy "Shahi"@en ;
+                                              rdfs:label "sampleExtractionForExperimentalSample"@en ;
+                                              owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/sufferFromDisorder
+improvit:sufferFromDisorder rdf:type owl:ObjectProperty ;
+
+                           rdfs:domain improvit:SufferClass ;
+                           rdfs:range improvit:Disorder ;
+                           <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                           rdfs:comment "This property shows the association of disorder to suffer."@en ;
+                           rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+                           rdfs:label "sufferFromDisorder"@en ;
+                           owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/sufferingPerson
+improvit:sufferingPerson rdf:type owl:ObjectProperty ;
+
+                        rdfs:domain improvit:SufferClass ;
+                        rdfs:range improvit:Donor ;
+                        <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                        rdfs:comment "This property shows the association of donor to suffer."@en ;
+                        rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+                        rdfs:label "sufferingPerson"@en ;
+                        owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/target
+improvit:target rdf:type owl:ObjectProperty ;
+
+               rdfs:domain improvit:Vaccine ;
+               rdfs:range improvit:InfectiousAgent ;
+               <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
+               rdfs:comment "This property shows the association of vaccine to infectiousAgent."@en ;
+               rdfs:isDefinedBy "Hanan, Janyn, Shahi, Annett, Shehneela."@en ;
+               rdfs:label "target"@en ;
+               owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/treat
+improvit:treat rdf:type owl:ObjectProperty ;
+
+              rdfs:domain improvit:MedicalDrug ;
+              rdfs:range improvit:Disorder ;
+              <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+              rdfs:comment "This property shows the association of medical drug to disorder."@en ;
+              rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
+              rdfs:label "treat"@en ;
+              owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/use
+improvit:use rdf:type owl:ObjectProperty ;
+
+            rdfs:domain improvit:MedicationTreatment ;
+            rdfs:range improvit:MedicalDrug ;
+            <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
+            rdfs:comment "This property shows the association of medicationTreatment to medicalDrug."@en ;
+            rdfs:isDefinedBy "Hanan, Janyn, Shahi, Annett, Shehneela."@en ;
+            rdfs:label "use"@en ;
+            owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/utilizeVaccine
+improvit:utilizeVaccine rdf:type owl:ObjectProperty ;
+
+                       rdfs:domain improvit:Utilize ;
+                       rdfs:range improvit:Vaccine ;
+                       <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
+                       rdfs:comment "This property shows the association of utilize to vaccine."@en ;
+                       rdfs:isDefinedBy "Shahi"@en ;
+                       rdfs:label "utilizeVaccine"@en ;
+                       owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/vaccinationUtilize
+improvit:vaccinationUtilize rdf:type owl:ObjectProperty ;
+
+                           rdfs:domain improvit:Vaccination ;
+                           rdfs:range improvit:Utilize ;
+                           <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
+                           rdfs:comment "This property shows the association of vaccination to utilize."@en ;
+                           rdfs:isDefinedBy "Hanan, Janyn, Shahi, Annett, Shehneela"@en ;
+                           rdfs:label "vaccinationUtilize"@en ;
+                           owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/vaccineUtilize
+improvit:vaccineUtilize rdf:type owl:ObjectProperty ;
+
+                       rdfs:domain improvit:Vaccine ;
+                       rdfs:range improvit:Utilize ;
+                       <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
+                       rdfs:comment "This property shows the association of vaccine to utilize."@en ;
+                       rdfs:isDefinedBy "Hanan, Janyn, Shahi, Annett, Shehneela."@en ;
+                       rdfs:label "vaccineUtilize"@en ;
+                       owl:versionInfo "v1.0"@en .
+
+
+###  http://www.project-improvit.de/vocab/workingWith
+improvit:workingWith rdf:type owl:ObjectProperty ;
+
+                    rdfs:domain improvit:ConductorPerson ;
+                    rdfs:range improvit:ResearchGroup ;
+                    <http://purl.org/dc/elements/1.1/date> "2022-04-22T00:00:00"@en ;
+                    rdfs:comment "This property shows the association of conductor person to research group."@en ;
+                    rdfs:isDefinedBy "Hanan, Janyn, Shahi, Annett, Shehneela."@en ;
+                    rdfs:label "workingWith"@en ;
+                    owl:versionInfo "v1.0"@en .
+
 
 ###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
