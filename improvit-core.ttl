@@ -4227,7 +4227,7 @@ frapo:extDonate rdf:type owl:Class ;
              owl:versionInfo "v1.0"@en .
 
 owl:equivalentClass rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
+
              rdfs:domain improvit:Person ;
              rdfs:range sio:extPerson ;
              <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
@@ -4237,7 +4237,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
              owl:versionInfo "v1.0"@en .
 
 owl:equivalentClass rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
+
              rdfs:domain improvit:Donor ;
              rdfs:range mrel:extDonor ;
              <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
@@ -4247,7 +4247,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
              owl:versionInfo "v1.0"@en .
 
 owl:equivalentClass rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
+
              rdfs:domain improvit:Visit ;
              rdfs:range sbeo:extVisit ;
              <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
@@ -4257,7 +4257,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
              owl:versionInfo "v1.0"@en .
 
 owl:equivalentClass rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
+
              rdfs:domain improvit:Biosample ;
              rdfs:range sio:extBiosample ;
              <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
@@ -4267,7 +4267,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
              owl:versionInfo "v1.0"@en .
 
 owl:equivalentClass rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
+
              rdfs:domain improvit:Biosample ;
              rdfs:range sio:extBiosample ;
              <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
@@ -4277,7 +4277,7 @@ owl:equivalentClass rdf:type owl:ObjectProperty ;
              owl:versionInfo "v1.0"@en .
 
 owl:equivalentClass rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty ;
+
              rdfs:domain improvit:Donate ;
              rdfs:range frapo:extDonate ;
              <http://purl.org/dc/elements/1.1/date> "2022-10-25T00:00:00"@en ;
