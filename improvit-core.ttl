@@ -8,6 +8,26 @@
 <https://github.com/tibonto/ImProvit/blob/master/improvit-core.ttl> rdf:type owl:Ontology.
 
 
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype ;
+         rdfs:label "date"@en .
+
 ###  http://www.project-improvit.de/vocab/Person
 improvit:Person rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
@@ -37,7 +57,7 @@ improvit:SufferClass rdf:type owl:Class ;
 ###  http://www.project-improvit.de/vocab/sufferingPerson
 improvit:sufferingPerson rdf:type owl:ObjectProperty ;
                          rdfs:domain improvit:SufferClass ;
-                         rdfs:range improvit:Person ;
+                         rdfs:range improvit:Donor ;
                          <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
                          rdfs:comment "This property shows the association of donor to suffer."@en ;
                          rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
