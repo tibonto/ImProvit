@@ -1,13 +1,11 @@
-@prefix : <urn:webprotege:ontology:3e5e75f0-214f-41d5-942e-115a83fc0e4b#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix improvit: <http://www.project-improvit.de/vocab/> .
-@base <urn:webprotege:ontology:3e5e75f0-214f-41d5-942e-115a83fc0e4b> .
 
-<urn:webprotege:ontology:3e5e75f0-214f-41d5-942e-115a83fc0e4b> rdf:type owl:Ontology .
+<https://github.com/tibonto/ImProvit/blob/master/improvit-core.ttl> rdf:type owl:Ontology.
 
 #################################################################
 #    Annotation properties
@@ -499,6 +497,18 @@ improvit:hasAminoAcidSequenceOfStimulationAgent rdf:type owl:ObjectProperty ;
                                                 owl:versionInfo "v1.0"@en .
 
 
+###  http://www.project-improvit.de/vocab/hasAnnotation
+improvit:hasAnnotation rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain improvit:Donor ;
+                       rdfs:range improvit:Annotation ;
+                       <http://purl.org/dc/elements/1.1/date> "2023-09-22T00:00:00"@en ;
+                       rdfs:comment "This property shows the annoations from external resources."@en ;
+                       rdfs:isDefinedBy "Shahi"@en ;
+                       rdfs:label "hasAnnotation"@en ;
+                       owl:versionInfo "v1.0"@en .
+
+
 ###  http://www.project-improvit.de/vocab/hasBufferComponent
 improvit:hasBufferComponent rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf owl:topObjectProperty ;
@@ -943,7 +953,7 @@ improvit:sufferFromDisorder rdf:type owl:ObjectProperty ;
 improvit:sufferingPerson rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf owl:topObjectProperty ;
                          rdfs:domain improvit:SufferClass ;
-                         rdfs:range improvit:Donor ;
+                         rdfs:range improvit:Person ;
                          <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
                          rdfs:comment "This property shows the association of donor to suffer."@en ;
                          rdfs:isDefinedBy "Shehneela, Shahi, Annett, Hanan, Janyn."@en ;
@@ -1078,6 +1088,7 @@ improvit:hasAge rdf:type owl:DatatypeProperty ;
 ###  http://www.project-improvit.de/vocab/hasAgeUnit
 improvit:hasAgeUnit rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain improvit:Person ;
                     rdfs:range xsd:string ;
                     <http://purl.org/dc/elements/1.1/date> "2022-07-28T00:00:00"@en ;
                     rdfs:comment "This attribute represents the unit of the person's age."@en ;
@@ -1519,6 +1530,7 @@ improvit:hasDifferenceInNonCodingRegion rdf:type owl:DatatypeProperty ;
 ###  http://www.project-improvit.de/vocab/hasDisorderCurrentStatus
 improvit:hasDisorderCurrentStatus rdf:type owl:DatatypeProperty ;
                                   rdfs:subPropertyOf owl:topDataProperty ;
+                                  rdfs:domain improvit:Disorder ;
                                   rdfs:range xsd:string ;
                                   <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
                                   rdfs:comment "This attribute represents the present situation of the donor´s disorder."@en ;
@@ -1530,6 +1542,7 @@ improvit:hasDisorderCurrentStatus rdf:type owl:DatatypeProperty ;
 ###  http://www.project-improvit.de/vocab/hasDisorderInformationDate
 improvit:hasDisorderInformationDate rdf:type owl:DatatypeProperty ;
                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                    rdfs:domain improvit:Disorder ;
                                     rdfs:range xsd:date ;
                                     <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
                                     rdfs:comment "This attribute represents the date when the  disorder was reported."@en ;
@@ -1553,6 +1566,7 @@ improvit:hasDisorderName rdf:type owl:DatatypeProperty ;
 ###  http://www.project-improvit.de/vocab/hasDisorderOccuranceInSameYear
 improvit:hasDisorderOccuranceInSameYear rdf:type owl:DatatypeProperty ;
                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                        rdfs:domain improvit:Disorder ;
                                         rdfs:range xsd:nonNegativeInteger ;
                                         <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
                                         rdfs:comment "This attribute represents disorder occurance in the same year."@en ;
@@ -1564,6 +1578,7 @@ improvit:hasDisorderOccuranceInSameYear rdf:type owl:DatatypeProperty ;
 ###  http://www.project-improvit.de/vocab/hasDisorderOccuranceNumber
 improvit:hasDisorderOccuranceNumber rdf:type owl:DatatypeProperty ;
                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                    rdfs:domain improvit:Disorder ;
                                     rdfs:range xsd:nonNegativeInteger ;
                                     <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
                                     rdfs:comment "This attribute represents the number of times the particular disorder occur."@en ;
@@ -1575,6 +1590,7 @@ improvit:hasDisorderOccuranceNumber rdf:type owl:DatatypeProperty ;
 ###  http://www.project-improvit.de/vocab/hasDisorderReportDay
 improvit:hasDisorderReportDay rdf:type owl:DatatypeProperty ;
                               rdfs:subPropertyOf owl:topDataProperty ;
+                              rdfs:domain improvit:Disorder ;
                               rdfs:range xsd:date ;
                               <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
                               rdfs:comment "This attribute represents the date when the donor disorder information was collected."@en ;
@@ -1586,6 +1602,7 @@ improvit:hasDisorderReportDay rdf:type owl:DatatypeProperty ;
 ###  http://www.project-improvit.de/vocab/hasDisorderReportMonth
 improvit:hasDisorderReportMonth rdf:type owl:DatatypeProperty ;
                                 rdfs:subPropertyOf owl:topDataProperty ;
+                                rdfs:domain improvit:Disorder ;
                                 rdfs:range xsd:date ;
                                 <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
                                 rdfs:comment "This attribute represents the month when the disorder was reported."@en ;
@@ -1597,6 +1614,7 @@ improvit:hasDisorderReportMonth rdf:type owl:DatatypeProperty ;
 ###  http://www.project-improvit.de/vocab/hasDisorderReportSource
 improvit:hasDisorderReportSource rdf:type owl:DatatypeProperty ;
                                  rdfs:subPropertyOf owl:topDataProperty ;
+                                 rdfs:domain improvit:Disorder ;
                                  rdfs:range xsd:string ;
                                  <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
                                  rdfs:comment "This attribute represents the source of the donor disorder information."@en ;
@@ -1608,6 +1626,7 @@ improvit:hasDisorderReportSource rdf:type owl:DatatypeProperty ;
 ###  http://www.project-improvit.de/vocab/hasDisorderReportYear
 improvit:hasDisorderReportYear rdf:type owl:DatatypeProperty ;
                                rdfs:subPropertyOf owl:topDataProperty ;
+                               rdfs:domain improvit:Disorder ;
                                rdfs:range xsd:date ;
                                <http://purl.org/dc/elements/1.1/date> "2022-07-29T00:00:00"@en ;
                                rdfs:comment "This attribute represents the year when the disorder was reported."@en ;
@@ -3413,15 +3432,6 @@ improvit:ExtractSample rdf:type owl:Class ;
                        owl:versionInfo "v1.0"@en .
 
 
-###  http://www.project-improvit.de/vocab/FluorochromeConjugatedAntibodies
-improvit:FluorochromeConjugatedAntibodies rdf:type owl:Class ;
-                                          <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
-                                          rdfs:comment "needs to define by experts."@en ;
-                                          rdfs:isDefinedBy "Shahi"@en ;
-                                          rdfs:label "FluorochromeConjugatedAntibodies"@en ;
-                                          owl:versionInfo "v1.0"@en .
-
-
 ###  http://www.project-improvit.de/vocab/FluorochromeConjugatedAntibody
 improvit:FluorochromeConjugatedAntibody rdf:type owl:Class ;
                                         rdfs:subClassOf improvit:ProtocolReagent ;
@@ -3503,6 +3513,7 @@ improvit:HLAClassII rdf:type owl:Class ;
 
 ###  http://www.project-improvit.de/vocab/HLAGene
 improvit:HLAGene rdf:type owl:Class ;
+                 rdfs:subClassOf owl:Thing ;
                  <http://purl.org/dc/elements/1.1/date> "2022-07-27T00:00:00"@en ;
                  rdfs:comment "This class represents the genes that encode for human leukocyte antigen (HLA) on chromosome 6."@en ;
                  rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
@@ -4076,15 +4087,6 @@ improvit:UtilizeMaterials rdf:type owl:Class ;
                           rdfs:comment "This class represents the relation between the protocol, the medium, the buffer, and the reagent of the experiment."@en ;
                           rdfs:isDefinedBy "Hanan, Shehneela, Janyn, Shahi, Annett."@en ;
                           rdfs:label "UtilizeMaterials"@en ;
-                          owl:versionInfo "v1.0"@en .
-
-
-###  http://www.project-improvit.de/vocab/UtilizeMaterilas
-improvit:UtilizeMaterilas rdf:type owl:Class ;
-                          <http://purl.org/dc/elements/1.1/date> "2023-01-12T00:00:00"@en ;
-                          rdfs:comment "needs to define by experts."@en ;
-                          rdfs:isDefinedBy "Shahi"@en ;
-                          rdfs:label "UtilizeMaterilas"@en ;
                           owl:versionInfo "v1.0"@en .
 
 
