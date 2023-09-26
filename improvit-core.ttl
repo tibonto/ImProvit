@@ -36,6 +36,16 @@ improvit:SufferClass rdf:type owl:Class ;
                     rdfs:label "SufferClass"@en ;
                     owl:versionInfo "v1.0"^^xsd:string .
 
+###  owl:topDataProperty
+improvit:topobjectProperty rdf:type owl:topObjectProperty ;
+#                        rdfs:domain improvit:SufferClass ;
+#                        rdfs:range improvit:Donor ;
+                        <http://purl.org/dc/elements/1.1/date> "2022-08-01T00:00:00"@en ;
+                        rdfs:comment "This is the super top object property."@en ;
+                        rdfs:isDefinedBy "Shahi."@en ;
+                        rdfs:label "sufferingPerson"@en ;
+                        owl:versionInfo "v1.0"@en .
+
 ###  http://www.project-improvit.de/vocab/sufferingPerson
 improvit:sufferingPerson rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf owl:topObjectProperty ;
