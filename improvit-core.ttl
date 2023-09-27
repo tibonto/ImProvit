@@ -9,6 +9,7 @@
 @prefix cco: <https://smiy.sourceforge.net/cco/spec/cognitivecharacteristics.html#> .
 @prefix obo: <https://ontobee.org/ontology/PATO?iri=http://purl.obolibrary.org/obo> .
 @prefix frapo: <https://sparontologies.github.io/frapo/current/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix improvit: <http://www.project-improvit.de/vocab/> .
 
 <https://github.com/tibonto/ImProvit> rdf:type owl:Ontology ;
@@ -17,8 +18,6 @@
                                   dc:creator "ImProVIT project" ;
                                   dc:title "ImProVIT Unified Schema" ;
                                   owl:versionInfo "v1.0" .
-
-#<https://github.com/tibonto/ImProvit/blob/master/improvit-core.ttl> rdf:type owl:Ontology.
 
 #################################################################
 #    Annotation properties
